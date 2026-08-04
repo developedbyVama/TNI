@@ -1,0 +1,1610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TNI Store — Premium Products &amp; Brands Online</title>
+  <meta name="description"
+    content="TNI Store offers thousands of products across electronics, fashion, home, sports, and beauty. Premium brands, unbeatable prices, fast delivery." />
+  <meta name="keywords" content="TNI, online shopping, electronics, fashion, home, deals, best sellers" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+
+
+  <!-- ══════════════════════════════════════════
+         SECTION 1 · HEADER & NAVIGATION
+    ══════════════════════════════════════════ -->
+  <header>
+
+    <!-- ══════════════════════════════════════════
+           PROMO BAR
+      ══════════════════════════════════════════ -->
+    <div class="promo-bar" id="promo-bar">
+      <i class="ri-truck-line me-1"></i> Free Express Shipping on orders above ₹999 &nbsp;|&nbsp; Use code
+      <strong>TNI20</strong> for 20% off &nbsp;
+      <a href="#deals">Shop Flash Sale <i class="ri-arrow-right-line"></i></a>
+    </div>
+
+    <nav class="main-navbar" id="mainNavbar" aria-label="Main navigation">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between gap-3">
+
+          <!-- Logo -->
+          <a href="#" class="brand-logo-wrap me-2" aria-label="TNI Professionals home">
+            <div class="brand-logo-card">
+              <img src="./assets/img/logo.jpeg" alt="TNI Professionals Logo" class="brand-logo-img" />
+            </div>
+          </a>
+
+          <!-- Modern Crisp White Search Bar -->
+          <div class="search-bar-wrap d-none d-md-block">
+            <form class="search-form" action="#" role="search" onsubmit="event.preventDefault();">
+              <input type="search" id="siteSearch" placeholder="Search products, brands &amp; categories…"
+                aria-label="Search products" />
+              <button class="search-submit-btn" type="submit" aria-label="Search">
+                <i class="ri-search-line"></i>
+                <span>Search</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Product Dropdown Menu (placed after Search Bar) -->
+          <div class="dropdown d-none d-lg-block">
+            <button class="btn cat-toggle-btn dropdown-toggle" type="button" id="categoriesDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="ri-grid-fill"></i>
+              <span>Categories</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="cat-dropdown-menu" id="catDropdownPanel" role="menu" aria-labelledby="categoriesDropdown">
+              <div class="cat-dropdown-header">Browse by Category</div>
+              <ul class="cat-scroll-list">
+                <li><a href="#categories"><i class="ri-cpu-line"></i><span>Systems</span></a></li>
+                <li><a href="#categories"><i class="ri-projector-line"></i><span>Displays &amp; Projectors</span></a>
+                </li>
+                <li><a href="#categories"><i class="ri-printer-line"></i><span>Printers &amp; Scanners</span></a></li>
+                <li><a href="#categories"><i class="ri-hard-drive-2-line"></i><span>Storage &amp; Memory</span></a></li>
+                <li><a href="#categories"><i class="ri-router-line"></i><span>Networking</span></a></li>
+                <li><a href="#categories"><i class="ri-plug-line"></i><span>Components &amp; Accessories</span></a></li>
+                <li><a href="#categories"><i class="ri-tools-line"></i><span>Hardware Service &amp; Support</span></a>
+                </li>
+                <li><a href="#categories"><i class="ri-apps-line"></i><span>Applications</span></a></li>
+                <li><a href="#categories"><i class="ri-windows-line"></i><span>Operating Systems</span></a></li>
+                <li><a href="#categories"><i class="ri-gamepad-line"></i><span>Games</span></a></li>
+                <li><a href="#categories"><i class="ri-customer-service-2-line"></i><span>Software Service &amp;
+                      Support</span></a></li>
+                <li><a href="#categories"><i class="ri-chat-2-line"></i><span>Communication</span></a></li>
+                <li><a href="#categories"><i class="ri-map-pin-2-line"></i><span>Navigation</span></a></li>
+                <li><a href="#categories"><i class="ri-film-line"></i><span>Audio &amp; Video</span></a></li>
+                <li><a href="#categories"><i class="ri-camera-line"></i><span>Cameras &amp; Camcorders</span></a></li>
+                <li><a href="#categories"><i class="ri-image-line"></i><span>Photo Equipment</span></a></li>
+                <li><a href="#categories"><i class="ri-eye-line"></i><span>Optical Equipment</span></a></li>
+                <li><a href="#categories"><i class="ri-restaurant-line"></i><span>Kitchen Appliances</span></a></li>
+                <li><a href="#categories"><i class="ri-home-4-line"></i><span>Home Appliances</span></a></li>
+                <li><a href="#categories"><i class="ri-heart-pulse-line"></i><span>Health &amp; Beauty</span></a></li>
+                <li><a href="#categories"><i class="ri-archive-line"></i><span>Filing &amp; Archive</span></a></li>
+                <li><a href="#categories"><i class="ri-table-line"></i><span>Desk Accessories</span></a></li>
+                <li><a href="#categories"><i class="ri-pages-line"></i><span>Paper Products</span></a></li>
+                <li><a href="#categories"><i class="ri-send-plane-line"></i><span>Mailroom &amp; Shipping</span></a>
+                </li>
+                <li><a href="#categories"><i class="ri-presentation-line"></i><span>Meeting &amp;
+                      Presentation</span></a></li>
+                <li><a href="#categories"><i class="ri-computer-line"></i><span>Office Machines</span></a></li>
+                <li><a href="#categories"><i class="ri-hammer-line"></i><span>Hardware &amp; Tools</span></a></li>
+                <li><a href="#categories"><i class="ri-building-line"></i><span>Facility Supplies</span></a></li>
+                <li><a href="#categories"><i class="ri-glasses-line"></i><span>Vision Care</span></a></li>
+                <li><a href="#categories"><i class="ri-layout-line"></i><span>Office Furnishing &amp;
+                      Accessories</span></a></li>
+                <li><a href="#categories"><i class="ri-lock-2-line"></i><span>Security &amp; Home Automation</span></a>
+                </li>
+                <li><a href="#categories"><i class="ri-seedling-line"></i><span>Power, Garden &amp; Hand
+                      Tools</span></a></li>
+                <li><a href="#categories"><i class="ri-footprint-line"></i><span>Pet Supplies</span></a></li>
+                <li><a href="#categories"><i class="ri-box-3-line"></i><span>Additional Products</span></a></li>
+                <li><a href="#categories"><i class="ri-flashlight-line"></i><span>Electrical Supplies</span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Nav Icons (Account & Shopping Cart) -->
+          <div class="nav-icons-wrap">
+            <a href="#" class="nav-icon-btn" id="accountBtn" aria-label="My account">
+              <i class="ri-user-3-line"></i>
+              <span>Account</span>
+            </a>
+            <a href="#" class="nav-icon-btn d-none d-sm-flex" id="wishlistBtn" aria-label="Wishlist">
+              <i class="ri-heart-3-line"></i>
+              <span>Wishlist</span>
+            </a>
+            <a href="#" class="nav-icon-btn" id="cartBtn" aria-label="Shopping cart, 3 items">
+              <div class="cart-icon-wrap">
+                <i class="ri-shopping-cart-2-line"></i>
+                <span class="cart-badge">3</span>
+              </div>
+              <span>Cart</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-icon-btn d-md-none" type="button" id="mobileMenuToggle" data-bs-toggle="offcanvas"
+              data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas" aria-label="Open mobile menu"
+              style="background:none; border:none; cursor:pointer; padding:0;">
+              <i class="ri-menu-3-line"></i>
+              <span>Menu</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end mobile-offcanvas" tabindex="-1" id="mobileOffcanvas"
+    aria-labelledby="mobileOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold text-navy" id="mobileOffcanvasLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <!-- Mobile Search Bar -->
+      <div class="mobile-search-wrap mb-4">
+        <form class="mobile-search-form" action="#" role="search" onsubmit="event.preventDefault();">
+          <input type="search" id="mobileSiteSearch" placeholder="Search products, brands..."
+            aria-label="Search products" />
+          <button class="mobile-search-btn" type="submit" aria-label="Search">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Mobile Categories -->
+      <h6 class="fw-bold mb-3 text-uppercase small text-muted">Browse Categories</h6>
+      <ul class="mobile-cat-list">
+        <li><a href="#categories"><i class="ri-cpu-line"></i> Systems</a></li>
+        <li><a href="#categories"><i class="ri-projector-line"></i> Displays & Projectors</a></li>
+        <li><a href="#categories"><i class="ri-printer-line"></i> Printers & Scanners</a></li>
+        <li><a href="#categories"><i class="ri-hard-drive-2-line"></i> Storage & Memory</a></li>
+        <li><a href="#categories"><i class="ri-router-line"></i> Networking</a></li>
+        <li><a href="#categories"><i class="ri-plug-line"></i> Components & Accessories</a></li>
+        <li><a href="#categories"><i class="ri-tools-line"></i> Hardware Service & Support</a></li>
+        <li><a href="#categories"><i class="ri-apps-line"></i> Applications</a></li>
+        <li><a href="#categories"><i class="ri-windows-line"></i> Operating Systems</a></li>
+        <li><a href="#categories"><i class="ri-gamepad-line"></i> Games</a></li>
+        <li><a href="#categories"><i class="ri-customer-service-2-line"></i> Software Service & Support</a></li>
+        <li><a href="#categories"><i class="ri-chat-2-line"></i> Communication</a></li>
+        <li><a href="#categories"><i class="ri-map-pin-2-line"></i> Navigation</a></li>
+        <li><a href="#categories"><i class="ri-film-line"></i> Audio & Video</a></li>
+        <li><a href="#categories"><i class="ri-camera-line"></i> Cameras & Camcorders</a></li>
+        <li><a href="#categories"><i class="ri-image-line"></i> Photo Equipment</a></li>
+        <li><a href="#categories"><i class="ri-eye-line"></i> Optical Equipment</a></li>
+        <li><a href="#categories"><i class="ri-restaurant-line"></i> Kitchen Appliances</a></li>
+        <li><a href="#categories"><i class="ri-home-4-line"></i> Home Appliances</a></li>
+        <li><a href="#categories"><i class="ri-heart-pulse-line"></i> Health & Beauty</a></li>
+        <li><a href="#categories"><i class="ri-archive-line"></i> Filing & Archive</a></li>
+        <li><a href="#categories"><i class="ri-table-line"></i> Desk Accessories</a></li>
+        <li><a href="#categories"><i class="ri-pages-line"></i> Paper Products</a></li>
+        <li><a href="#categories"><i class="ri-send-plane-line"></i> Mailroom & Shipping</a></li>
+        <li><a href="#categories"><i class="ri-presentation-line"></i> Meeting & Presentation</a></li>
+        <li><a href="#categories"><i class="ri-computer-line"></i> Office Machines</a></li>
+        <li><a href="#categories"><i class="ri-hammer-line"></i> Hardware & Tools</a></li>
+        <li><a href="#categories"><i class="ri-building-line"></i> Facility Supplies</a></li>
+        <li><a href="#categories"><i class="ri-glasses-line"></i> Vision Care</a></li>
+        <li><a href="#categories"><i class="ri-layout-line"></i> Office Furnishing & Accessories</a></li>
+        <li><a href="#categories"><i class="ri-lock-2-line"></i> Security & Home Automation</a></li>
+        <li><a href="#categories"><i class="ri-seedling-line"></i> Power, Garden & Hand Tools</a></li>
+        <li><a href="#categories"><i class="ri-footprint-line"></i> Pet Supplies</a></li>
+        <li><a href="#categories"><i class="ri-box-3-line"></i> Additional Products</a></li>
+        <li><a href="#categories"><i class="ri-flashlight-line"></i> Electrical Supplies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+           SECTION 2 · HERO BANNER / BACKGROUND SLIDER
+      ══════════════════════════════════════════ -->
+    <section class="hero-section py-0" id="hero" aria-label="Main promotional slider">
+      <div class="hero-swiper-container position-relative">
+
+        <!-- Swiper Slider -->
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1: Electronics & Audio -->
+            <div class="swiper-slide"
+              style="background-image: url('https://placehold.co/1400x600/1e3264/ffffff?text=Wireless+Headphones+Pro+X');">
+              <div class="container px-md-5">
+                <div class="hero-slide-content">
+                  <h1 class="hero-title">
+                    Experience Pure <em>Acoustic Clarity</em> &amp; Comfort
+                  </h1>
+                  <p class="hero-subtitle">
+                    Immerse yourself in high-definition spatial sound with active noise cancellation and 40-hour
+                    continuous playback.
+                  </p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a href="#products" class="btn btn-secondary btn-lg px-4 ">
+                      Shop Audio <i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                    <a href="#deals" class="btn btn-outline-light btn-lg px-4">
+                      Explore Deals
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Smart Wearables -->
+            <div class="swiper-slide"
+              style="background-image: url('https://placehold.co/1400x600/0f172a/ffffff?text=Smart+Watch+GPS+Pro');">
+              <div class="container px-md-5">
+                <div class="hero-slide-content">
+                  <h1 class="hero-title">
+                    Elevate Fitness with <em>Smart Tracking</em> Pro
+                  </h1>
+                  <p class="hero-subtitle">
+                    Track heart rate, SpO2, sleep stages, and 100+ workout modes with a vibrant AMOLED display and 7-day
+                    battery life.
+                  </p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a href="#products" class="btn btn-secondary btn-lg px-4 ">
+                      Explore Watches <i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                    <a href="#deals" class="btn btn-outline-light btn-lg px-4">
+                      View Specs
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Summer Fashion -->
+            <div class="swiper-slide"
+              style="background-image: url('https://placehold.co/1400x600/203874/ffffff?text=Summer+Fashion+Collection');">
+              <div class="container px-md-5">
+                <div class="hero-slide-content">
+                  <h1 class="hero-title">
+                    Unleash Your <em>Signature Style</em> This Season
+                  </h1>
+                  <p class="hero-subtitle">
+                    Discover lightweight linens, classic cotton jackets, and trendy streetwear crafted from sustainable
+                    premium fabrics.
+                  </p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a href="#products" class="btn btn-secondary btn-lg px-4 ">
+                      Explore Apparel <i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                    <a href="#deals" class="btn btn-outline-light btn-lg px-4">
+                      Get 30% Off
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Home & Living -->
+            <div class="swiper-slide"
+              style="background-image: url('https://placehold.co/1400x600/152449/ffffff?text=Smart+Home+%26+Kitchen+Gear');">
+              <div class="container px-md-5">
+                <div class="hero-slide-content">
+                  <h1 class="hero-title">
+                    Modernize Your <em>Living Space</em> Effortlessly
+                  </h1>
+                  <p class="hero-subtitle">
+                    From 15-bar espresso makers to smart air fryers and cozy minimalist decor — elevate everyday comfort
+                    at home.
+                  </p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a href="#products" class="btn btn-secondary btn-lg px-4 ">
+                      Shop Home <i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                    <a href="#deals" class="btn btn-outline-light btn-lg px-4">
+                      Best Sellers
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5: Sports & Fitness -->
+            <div class="swiper-slide"
+              style="background-image: url('https://placehold.co/1400x600/1e3264/ffffff?text=Pro+Sports+%26+Fitness+Equipment');">
+              <div class="container px-md-5">
+                <div class="hero-slide-content">
+                  <h1 class="hero-title">
+                    Push Your Limits with <em>Pro Athlete Gear</em>
+                  </h1>
+                  <p class="hero-subtitle">
+                    High-grip yoga mats, shock-absorbing running sneakers, and durable gym gear engineered for peak
+                    endurance.
+                  </p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a href="#products" class="btn btn-secondary btn-lg px-4 ">
+                      Shop Fitness <i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                    <a href="#deals" class="btn btn-outline-light btn-lg px-4">
+                      View Collection
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6: Skincare & Beauty -->
+            <div class="swiper-slide"
+              style="background-image: url('https://placehold.co/1400x600/254085/ffffff?text=Organic+Beauty+%26+Skincare+Kit');">
+              <div class="container px-md-5">
+                <div class="hero-slide-content">
+                  <h1 class="hero-title">
+                    Nourish Your <em>Natural Glow</em> Every Day
+                  </h1>
+                  <p class="hero-subtitle">
+                    Botanical vitamin C serums, dermatologist-approved skincare rituals, and organic self-care formulas.
+                  </p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a href="#products" class="btn btn-secondary btn-lg px-4 ">
+                      Shop Beauty <i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                    <a href="#deals" class="btn btn-outline-light btn-lg px-4">
+                      Claim Offer
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Custom Swiper Pagination Bullets -->
+          <div class="swiper-pagination hero-swiper-pagination"></div>
+        </div>
+
+        <!-- Offset Previous / Next Buttons to prevent overlap with text -->
+        <div class="hero-nav-btn hero-btn-prev " id="heroPrevBtn" aria-label="Previous slide">
+          <i class="ri-arrow-left-s-line"></i>
+        </div>
+        <div class="hero-nav-btn hero-btn-next  " id="heroNextBtn" aria-label="Next slide">
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+           SECTION 3 · FEATURED CATEGORIES
+      ══════════════════════════════════════════ -->
+    <section id="categories" class="bg-light" aria-label="Featured categories">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-5">
+          <div>
+            <span class="section-tag">Explore Collections</span>
+            <h2 class="section-title  mb-0">Featured Categories</h2>
+
+            <!-- <a href="#" class="btn btn-outline-primary btn-sm d-inline-flex  d-md-none p-2 my-4">
+              View All <i class="ri-arrow-right-line ms-1"></i>
+            </a> -->
+          </div>
+          <a href="#" class="btn btn-outline-primary btn-sm  d-inline-flex p-2">
+            View All <i class="ri-arrow-right-line ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-lg-6">
+          <div class="col">
+            <a href="#products" class="category-card shadow-sm" id="catElectronics">
+              <div class="cat-icon-wrap">
+                <i class="ri-macbook-line cat-icon"></i>
+              </div>
+              <span class="cat-name">Electronics</span>
+              <span class="cat-count">4,200+ Items</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#products" class="category-card shadow-sm" id="catFashion">
+              <div class="cat-icon-wrap">
+                <i class="ri-t-shirt-line cat-icon"></i>
+              </div>
+              <span class="cat-name">Fashion</span>
+              <span class="cat-count">8,500+ Items</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#products" class="category-card shadow-sm" id="catHome">
+              <div class="cat-icon-wrap">
+                <i class="ri-home-4-line cat-icon"></i>
+              </div>
+              <span class="cat-name">Home &amp; Living</span>
+              <span class="cat-count">3,100+ Items</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#products" class="category-card shadow-sm" id="catSports">
+              <div class="cat-icon-wrap">
+                <i class="ri-football-line cat-icon"></i>
+              </div>
+              <span class="cat-name">Sports</span>
+              <span class="cat-count">2,600+ Items</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#products" class="category-card shadow-sm" id="catBeauty">
+              <div class="cat-icon-wrap">
+                <i class="ri-sparkling-line cat-icon"></i>
+              </div>
+              <span class="cat-name">Beauty</span>
+              <span class="cat-count">1,800+ Items</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#products" class="category-card shadow-sm" id="catBooks">
+              <div class="cat-icon-wrap">
+                <i class="ri-book-open-line cat-icon"></i>
+              </div>
+              <span class="cat-name">Books</span>
+              <span class="cat-count">12,000+ Items</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+           SECTION 4 · PRODUCT OFFERS & DEALS
+      ══════════════════════════════════════════ -->
+    <section id="products" class="bg-white" aria-label="Product offers">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-5">
+          <div>
+            <span class="section-tag">Handpicked Selections</span>
+            <h2 class="section-title mb-0">Trending Products</h2>
+          </div>
+          <a href="#" class="btn btn-outline-primary btn-sm  d-inline-flex p-2">
+            View All <i class="ri-arrow-right-line ms-1"></i>
+          </a>
+        </div>
+
+        <!-- Product Tabs -->
+        <div class="product-tabs">
+          <ul class="nav nav-tabs mb-4" id="productTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab-arrivals" data-bs-toggle="tab" data-bs-target="#arrivals"
+                type="button" role="tab" aria-controls="arrivals" aria-selected="true">
+                <i class="ri-shopping-bag-3-line me-1"></i> New Arrivals
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-bestsellers" data-bs-toggle="tab" data-bs-target="#bestsellers"
+                type="button" role="tab" aria-controls="bestsellers" aria-selected="false">
+                <i class="ri-star-fill me-1"></i> Best Sellers
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-trending" data-bs-toggle="tab" data-bs-target="#trending" type="button"
+                role="tab" aria-controls="trending" aria-selected="false">
+                <i class="ri-fire-fill me-1"></i> Trending
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="productTabContent">
+
+            <!-- New Arrivals -->
+            <div class="tab-pane fade show active" id="arrivals" role="tabpanel" aria-labelledby="tab-arrivals">
+              <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodArrivals1">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-danger text-white">NEW</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Electronics</p>
+                      <h3 class="product-name">Wireless ANC Headphones Pro</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span class="rating-count">(248)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹2,499</span>
+                        <span class="price-original">₹4,999</span>
+                        <span class="price-discount">50% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-arr1">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodArrivals2">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-success text-white">HOT</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Electronics</p>
+                      <h3 class="product-name">Smart Fitness Watch with GPS</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span class="rating-count">(182)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹3,999</span>
+                        <span class="price-original">₹6,499</span>
+                        <span class="price-discount">38% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-arr2">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodArrivals3">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-warning text-dark">SALE</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Fashion</p>
+                      <h3 class="product-name">Air Run Ultra Sport Sneakers</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span class="rating-count">(95)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹1,799</span>
+                        <span class="price-original">₹2,999</span>
+                        <span class="price-discount">40% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-arr3">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodArrivals4">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-info text-white">NEW</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Fashion</p>
+                      <h3 class="product-name">Premium Slim Fit Cotton Jacket</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <span class="rating-count">(67)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹1,299</span>
+                        <span class="price-original">₹2,499</span>
+                        <span class="price-discount">48% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-arr4">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Best Sellers -->
+            <div class="tab-pane fade" id="bestsellers" role="tabpanel" aria-labelledby="tab-bestsellers">
+              <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodBest1">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-warning text-dark">#1 PICK</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Home &amp; Living</p>
+                      <h3 class="product-name">Espresso Coffee Maker 15-Bar</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span class="rating-count">(1,247)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹4,299</span>
+                        <span class="price-original">₹6,000</span>
+                        <span class="price-discount">28% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-best1">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodBest2">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-success text-white">TOP RATED</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Sports</p>
+                      <h3 class="product-name">Non-Slip Eco Yoga Mat 6mm</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span class="rating-count">(643)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹899</span>
+                        <span class="price-original">₹1,499</span>
+                        <span class="price-discount">40% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-best2">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodBest3">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-primary text-white">BESTSELLER</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Electronics</p>
+                      <h3 class="product-name">Portable Bluetooth Speaker 360°</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span class="rating-count">(892)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹2,199</span>
+                        <span class="price-original">₹3,500</span>
+                        <span class="price-discount">37% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-best3">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodBest4">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-danger text-white">HOT</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Beauty</p>
+                      <h3 class="product-name">Luxury Skincare Ritual Kit</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <span class="rating-count">(431)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹1,599</span>
+                        <span class="price-original">₹2,800</span>
+                        <span class="price-discount">43% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-best4">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Trending -->
+            <div class="tab-pane fade" id="trending" role="tabpanel" aria-labelledby="tab-trending">
+              <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodTrend1">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-danger text-white">TRENDING</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Electronics</p>
+                      <h3 class="product-name">RGB Gaming Mouse 16000 DPI</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span class="rating-count">(523)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹1,299</span>
+                        <span class="price-original">₹2,200</span>
+                        <span class="price-discount">41% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-trend1">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodTrend2">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-warning text-dark">VIRAL</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Fashion</p>
+                      <h3 class="product-name">Classic Stretch Denim Jeans</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <span class="rating-count">(287)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹1,099</span>
+                        <span class="price-original">₹1,999</span>
+                        <span class="price-discount">45% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-trend2">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodTrend3">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-success text-white">TRENDING</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Home &amp; Living</p>
+                      <h3 class="product-name">Digital Air Fryer 5.5L</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span class="rating-count">(712)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹3,499</span>
+                        <span class="price-original">₹5,500</span>
+                        <span class="price-discount">36% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-trend3">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product-card card h-100" id="prodTrend4">
+                    <div class="product-img-wrap">
+                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                      <span class="product-badge bg-info text-white">TOP PICK</span>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="ri-heart-line"></i>
+                      </button>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="product-category">Beauty</p>
+                      <h3 class="product-name">Vitamin C Face Serum 30ml</h3>
+                      <div class="rating-row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                        <span class="rating-count">(394)</span>
+                      </div>
+                      <div class="price-row">
+                        <span class="price-current">₹699</span>
+                        <span class="price-original">₹1,200</span>
+                        <span class="price-discount">42% OFF</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart-btn" id="cart-trend4">
+                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div><!-- /tab-content -->
+        </div><!-- /product-tabs -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+           SECTION 5 · BRAND LOGO SCROLLING
+      ══════════════════════════════════════════ -->
+    <section id="brands" class="brands-section py-5 bg-light" aria-label="Featured brands">
+      <div class="container mb-3">
+        <p class="text-center fs-5 fw-semibold mb-0" style="text-transform:uppercase;letter-spacing:0.1em;">
+          500+ Trusted Brands — Available Direct
+        </p>
+      </div>
+
+      <!-- Brands Swiper -->
+      <div class="brands-swiper-container position-relative px-4 mt-4">
+        <div class="swiper brands-swiper">
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=SAMSUNG" alt="Samsung"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=APPLE" alt="Apple"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=NIKE" alt="Nike"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=SONY" alt="Sony"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=ADIDAS" alt="Adidas"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=ZARA" alt="Zara"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=LG" alt="LG" class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=PUMA" alt="Puma"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=DELL" alt="Dell"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=boAt" alt="boAt"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=H%26M" alt="H&M"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+            <div class="swiper-slide text-center">
+              <a href="#brand" class="brand-logo-link">
+                <img src="https://placehold.co/140x70/ffffff/1e3264?text=PHILIPS" alt="Philips"
+                  class="img-fluid brand-logo-img">
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="brand-nav-btn brand-btn-prev" id="brandPrevBtn" aria-label="Previous brand">
+          <i class="ri-arrow-left-s-line"></i>
+        </div>
+        <div class="brand-nav-btn brand-btn-next" id="brandNextBtn" aria-label="Next brand">
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+           SECTION 6 · SPECIAL OFFERS / DEALS OF THE DAY
+      ══════════════════════════════════════════ -->
+    <section id="deals" class="deals-section  " aria-label="Deals of the day">
+      <div class="container">
+        <!-- Header + Countdown -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-lg-5 mb-4 gap-3">
+          <div>
+            <span class="section-tag">Limited Time Offers</span>
+            <h2 class="section-title mb-0">Deals of the Day</h2>
+          </div>
+          <div>
+            <p class="text-white-50 small mb-2">Offer expires in:</p>
+            <div class="countdown-block" id="dealCountdown" aria-live="polite" aria-label="Countdown timer">
+              <div class="countdown-unit">
+                <span class="countdown-val" id="cdHours">08</span>
+                <span class="countdown-lbl">Hours</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-unit">
+                <span class="countdown-val" id="cdMinutes">45</span>
+                <span class="countdown-lbl">Mins</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-unit">
+                <span class="countdown-val" id="cdSeconds">30</span>
+                <span class="countdown-lbl">Secs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deal Cards -->
+        <div class="row g-4 row-cols-1 row-cols-md-3">
+
+          <div class="col">
+            <div class="deal-card h-100 " id="deal1">
+              <div class="deal-img-wrap">
+                <img src="https://placehold.co/414x190/" alt="Deal Placeholder" class="img-fluid w-100 h-100"
+                  style="object-fit: cover;">
+                <span class="deal-off-badge">49% OFF</span>
+              </div>
+              <div class="deal-body">
+                <p class="deal-cat">Electronics</p>
+                <h3 class="deal-name">55" 4K Ultra HD Smart LED TV</h3>
+                <div class="deal-prices">
+                  <span class="deal-price-now">₹32,999</span>
+                  <span class="deal-price-was">₹64,999</span>
+                </div>
+                <div class="sold-label">
+                  <span>72% claimed</span>
+                  <span>Only 28 left!</span>
+                </div>
+                <div class="deal-progress">
+                  <div class="deal-progress-bar" style="width: 72%"></div>
+                </div>
+                <button class="btn btn-secondary btn-sm w-100 mt-3 fw-semibold p-2" id="cart-deal1">
+                  Grab Deal <i class="ri-arrow-right-line ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="deal-card h-100" id="deal2">
+              <div class="deal-img-wrap">
+                <img src="https://placehold.co/414x190/" alt="Deal Placeholder" class="img-fluid w-100 h-100"
+                  style="object-fit: cover;">
+                <span class="deal-off-badge">49% OFF</span>
+              </div>
+              <div class="deal-body">
+                <p class="deal-cat">Fashion</p>
+                <h3 class="deal-name">Air Max Pro Breathable Running Shoes</h3>
+                <div class="deal-prices">
+                  <span class="deal-price-now">₹2,799</span>
+                  <span class="deal-price-was">₹5,499</span>
+                </div>
+                <div class="sold-label">
+                  <span>55% claimed</span>
+                  <span>Only 45 left!</span>
+                </div>
+                <div class="deal-progress">
+                  <div class="deal-progress-bar" style="width: 55%"></div>
+                </div>
+                <button class="btn btn-secondary btn-sm w-100 mt-3 fw-semibold p-2" id="cart-deal2">
+                  Grab Deal <i class="ri-arrow-right-line ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="deal-card h-100" id="deal3">
+              <div class="deal-img-wrap">
+                <img src="https://placehold.co/414x190/" alt="Deal Placeholder" class="img-fluid w-100 h-100"
+                  style="object-fit: cover;">
+                <span class="deal-off-badge">56% OFF</span>
+              </div>
+              <div class="deal-body">
+                <p class="deal-cat">Beauty</p>
+                <h3 class="deal-name">Complete Skincare Essentials Kit</h3>
+                <div class="deal-prices">
+                  <span class="deal-price-now">₹1,999</span>
+                  <span class="deal-price-was">₹4,500</span>
+                </div>
+                <div class="sold-label">
+                  <span>38% claimed</span>
+                  <span>Limited stock!</span>
+                </div>
+                <div class="deal-progress">
+                  <div class="deal-progress-bar" style="width: 38%"></div>
+                </div>
+                <button class="btn btn-secondary btn-sm w-100 mt-3 fw-semibold p-2" id="cart-deal3">
+                  Grab Deal <i class="ri-arrow-right-line ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+           SECTION 7 · CONTENT & MARKETING BLOCKS
+      ══════════════════════════════════════════ -->
+    <section id="content-blocks" class="bg-light " aria-label="Content and marketing">
+      <div class="container">
+
+        <!-- Our Story Banner -->
+        <div class="story-banner p-4 p-md-5 mb-5 rounded-4 shadow-sm">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8 col-xl-7">
+              <div class="story-content">
+                <span class="section-tag border-light text-light mb-3 d-inline-block">Our Story</span>
+                <h3 class="display-6 fw-bold text-white mb-3">Driven by Quality &amp; Unmatched Value</h3>
+                <p class="fs-6 fs-md-5 text-light opacity-75">
+                  TNI Store was founded with a singular purpose: connecting customers with verified,
+                  high-quality products at prices that make sense. From our curated catalog of 500+ brands
+                  to fast fulfillment and seamless support, we prioritize your satisfaction.
+                </p>
+                <a href="#" class="btn btn-secondary mt-3 px-4 py-2 fs-5" id="storyBtn">
+                  Learn More <i class="ri-arrow-right-line ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="d-flex justify-content-between align-items-center mb-5 pt-5">
+          <div>
+            <span class="section-tag">Store Blog</span>
+            <h2 class="section-title mb-0 d-none d-md-block">Tips, Guides &amp; Insights</h2>
+            <h2 class="section-title mb-0 d-md-none d-block">Tips, Guides &amp; <br> Insights</h2>
+          </div>
+          <a href="/blogs" class="btn btn-outline-primary btn-sm  d-inline-flex p-2">
+            View All Blogs <i class="ri-arrow-right-line ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-4 row-cols-1 row-cols-md-3">
+
+          <div class="col-lg-4">
+            <article class="blog-card card h-100" id="blog1">
+              <div class="blog-img-wrap">
+                <img src="https://placehold.co/414x170/" alt="Placeholder" class="img-fluid w-100 h-100"
+                  style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <span class="blog-tag">Technology</span>
+                <h3 class="blog-title mt-2">Top 10 Smart Tech Gadgets You Need This Year</h3>
+                <p class="blog-meta mb-3">
+                  <i class="ri-calendar-line me-1"></i> July 28, 2026 &nbsp;·&nbsp; 5 min read
+                </p>
+                <a href="#" class="blog-read-more" id="blogLink1">
+                  Read Article <i class="ri-arrow-right-line ms-1"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="blog-card card h-100" id="blog2">
+              <div class="blog-img-wrap">
+                <img src="https://placehold.co/414x170/" alt="Blog Placeholder" class="img-fluid w-100 h-100"
+                  style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <span class="blog-tag">Fashion</span>
+                <h3 class="blog-title mt-2">Summer Style Guide: Essential Wardrobe Upgrades</h3>
+                <p class="blog-meta mb-3">
+                  <i class="ri-calendar-line me-1"></i> July 25, 2026 &nbsp;·&nbsp; 4 min read
+                </p>
+                <a href="#" class="blog-read-more" id="blogLink2">
+                  Read Article <i class="ri-arrow-right-line ms-1"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="blog-card card h-100" id="blog3">
+              <div class="blog-img-wrap">
+                <img src="https://placehold.co/414x170/" alt="Blog Placeholder" class="img-fluid w-100 h-100"
+                  style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <span class="blog-tag">Lifestyle</span>
+                <h3 class="blog-title mt-2">Building Your Ideal Home Gym Setup on a Budget</h3>
+                <p class="blog-meta mb-3">
+                  <i class="ri-calendar-line me-1"></i> July 20, 2026 &nbsp;·&nbsp; 6 min read
+                </p>
+                <a href="#" class="blog-read-more" id="blogLink3">
+                  Read Article <i class="ri-arrow-right-line ms-1"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+           SECTION 8 · CUSTOMER PROOF & TRUST SIGNALS
+      ══════════════════════════════════════════ -->
+    <section id="trust" class="bg-white" aria-label="Customer reviews and trust signals">
+      <div class="container">
+
+        <!-- Reviews -->
+        <div class="text-center mb-lg-5 mb-3">
+          <span class="section-tag">Customer Testimonials</span>
+          <h2 class="section-title">Trusted by Over 2 Million Shoppers</h2>
+          <div class="d-flex justify-content-center align-items-center gap-2 mt-2 d-none d-lg-block">
+            <div class="stars-display">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <span class="fw-bold text-dark ms-1">4.9 / 5</span>
+            <span class="text-muted small">(210,000+ Verified Reviews)</span>
+          </div>
+        </div>
+
+        <div class="testimonials-swiper-container position-relative mb-lg-5 mb-3 px-md-4">
+          <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper py-3">
+
+              <!-- Testimonial 1 -->
+              <div class="swiper-slide">
+                <div class="review-card h-100" id="review1">
+                  <div class="review-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="review-quote">
+                    "Shopping at TNI was effortless. Fast dispatch, secure packaging, and the headphones perform
+                    brilliantly. Will definitely buy again."
+                  </p>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="reviewer-avatar" style="background: #203874;">P</div>
+                    <div>
+                      <div class="reviewer-name">Priya Sharma</div>
+                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>Mumbai, MH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="swiper-slide">
+                <div class="review-card h-100" id="review2">
+                  <div class="review-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="review-quote">
+                    "Authentic products and excellent pricing. Their support team resolved my query within minutes.
+                    Highly
+                    recommended!"
+                  </p>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="reviewer-avatar" style="background: #F17D16;">R</div>
+                    <div>
+                      <div class="reviewer-name">Rahul Mehta</div>
+                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>New Delhi, DL</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="swiper-slide">
+                <div class="review-card h-100" id="review3">
+                  <div class="review-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="review-quote">
+                    "The Flash Deals section is fantastic. Got a Smart TV at an unbeatable discount. Prompt delivery and
+                    seamless experience!"
+                  </p>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="reviewer-avatar" style="background: #16a34a;">A</div>
+                    <div>
+                      <div class="reviewer-name">Ananya Krishnan</div>
+                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>Bengaluru, KA</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="swiper-slide">
+                <div class="review-card h-100" id="review4">
+                  <div class="review-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                  <p class="review-quote">
+                    "Great variety of tech accessories. The quality exceeded my expectations and the checkout process
+                    was very smooth."
+                  </p>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="reviewer-avatar" style="background: #8b5cf6;">V</div>
+                    <div>
+                      <div class="reviewer-name">Vikram Singh</div>
+                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>Pune, MH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 5 -->
+              <div class="swiper-slide">
+                <div class="review-card h-100" id="review5">
+                  <div class="review-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="review-quote">
+                    "I am absolutely in love with the summer collection! The fabrics are breathable and the fit is just
+                    perfect. Will shop again!"
+                  </p>
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="reviewer-avatar" style="background: #ec4899;">N</div>
+                    <div>
+                      <div class="reviewer-name">Neha Gupta</div>
+                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>Hyderabad, TS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Navigation Controls -->
+          <div class="testimonial-nav-btn testimonial-btn-prev" id="testiPrevBtn" aria-label="Previous testimonial">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+          <div class="testimonial-nav-btn testimonial-btn-next" id="testiNextBtn" aria-label="Next testimonial">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+          <div class="col">
+            <div class="trust-badge-card" id="trustBadge1">
+              <i class="ri-shield-check-line trust-icon"></i>
+              <div>
+                <div class="trust-title">Secure Checkout</div>
+                <p class="trust-desc">256-bit SSL encrypted transactions</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="trust-badge-card" id="trustBadge2">
+              <i class="ri-refresh-line trust-icon"></i>
+              <div>
+                <div class="trust-title">30-Day Returns</div>
+                <p class="trust-desc">Hassle-free money-back guarantee</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="trust-badge-card" id="trustBadge3">
+              <i class="ri-truck-line trust-icon"></i>
+              <div>
+                <div class="trust-title">Fast Delivery</div>
+                <p class="trust-desc">Express delivery across India</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="trust-badge-card" id="trustBadge4">
+              <i class="ri-customer-service-2-line trust-icon"></i>
+              <div>
+                <div class="trust-title">24/7 Support</div>
+                <p class="trust-desc">Dedicated customer assistance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+           SECTION 9 · NEWSLETTER SIGN-UP
+      ══════════════════════════════════════════ -->
+    <section id="newsletter" class="newsletter-section py-5" aria-label="Newsletter signup">
+      <div class="container text-center">
+        <span class="section-tag" style="color:rgba(255,255,255,0.7);">Stay Updated</span>
+        <h2 class="mb-2 mt-1 section-title">Subscribe for Exclusive Deals</h2>
+        <p class="mb-4">
+          Receive special offers, new arrival alerts, and subscriber-only discounts<br class="d-none d-md-block" />
+          directly in your inbox.
+        </p>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <input type="email" id="newsletterEmail" placeholder="Enter your email address…"
+            aria-label="Email address for newsletter" required />
+          <button type="submit" id="newsletterBtn">
+            Subscribe <i class="ri-send-plane-fill ms-1"></i>
+          </button>
+        </form>
+        <p class="newsletter-privacy">
+          <i class="ri-lock-line me-1"></i> We respect your privacy. Unsubscribe at any time.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+         SECTION 10 · FOOTER
+    ══════════════════════════════════════════ -->
+  <footer class="site-footer py-5" id="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Brand Column -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="brand-logo-wrap d-inline-block mb-3" aria-label="TNI Professionals home">
+            <div class="brand-logo-card">
+              <img src="./assets/img/logo.jpeg" alt="TNI Professionals Logo" class="brand-logo-img2" />
+            </div>
+          </a>
+          <p class="footer-about-text">
+            Your trusted online destination for quality electronics, fashion, home essentials, and more.
+          </p>
+          <div class="social-icons mt-3">
+            <a href="#" aria-label="Follow TNI on Twitter"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" aria-label="Follow TNI on Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="Follow TNI on Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Follow TNI on YouTube"><i class="ri-youtube-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h6 class="footer-col-title">Company</h6>
+          <ul class="footer-link-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Room</a></li>
+            <li><a href="#">Our Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h6 class="footer-col-title">Support</h6>
+          <ul class="footer-link-list">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Shop -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="footer-col-title">Categories</h6>
+          <ul class="footer-link-list" id="footerCatList">
+            <li><a href="#categories">Systems</a></li>
+            <li><a href="#categories">Displays &amp; Projectors</a></li>
+            <li><a href="#categories">Printers &amp; Scanners</a></li>
+            <!-- More categories hidden by default -->
+            <li class="footer-more-cats d-none"><a href="#categories">Storage &amp; Memory</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Networking</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Components &amp; Accessories</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Kitchen Appliances</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Home Appliances</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Health &amp; Beauty</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Games</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Audio &amp; Video</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Cameras &amp; Camcorders</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Pet Supplies</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Security &amp; Home Automation</a></li>
+            <li class="footer-more-cats d-none"><a href="#categories">Electrical Supplies</a></li>
+            <li>
+              <button class="footer-more-btn" id="footerMoreCatsBtn" onclick="toggleFooterCats()">
+                <i class="ri-add-line me-1"></i>More Categories
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h6 class="footer-col-title">Contact Us</h6>
+          <ul class="footer-link-list">
+            <li>
+              <a href="mailto: sufyan@tniprofessionals.com">
+                <i class="ri-mail-line mt-1"></i> sufyan@tniprofessionals.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+911800123456">
+                <i class="ri-phone-line mt-1"></i> 7736645145
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="mt-4" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 pb-2">
+        <p class="footer-bottom-text mb-0">
+          © <span id="year"></span> TNI Store. All rights reserved.
+        </p>
+        <div class="payment-badges">
+          <span class="pay-badge">VISA</span>
+          <span class="pay-badge">Mastercard</span>
+          <span class="pay-badge">UPI</span>
+          <span class="pay-badge">PayPal</span>
+          <span class="pay-badge">COD</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- App JS -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

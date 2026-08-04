@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ── Navbar scroll shrink + hide on scroll down ──────────────
-  const navbar     = document.getElementById('mainNavbar');
+  const navbar = document.getElementById('mainNavbar');
   const siteHeader = navbar ? navbar.closest('header') : null;
 
   // Because header is position:fixed, offset body so content isn't hidden under it
@@ -101,19 +101,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // ── Brands Swiper (Continuous Marquee) ─────────────────────
+  // ── Brands Swiper (Continuous Marquee, pause on hover) ─────────
   if (typeof Swiper !== 'undefined' && document.querySelector('.brands-swiper')) {
     new Swiper('.brands-swiper', {
       loop: true,
-      speed: 6000,
+      speed: 4500,
       slidesPerView: 2,
       spaceBetween: 20,
       autoplay: {
         delay: 0,
         disableOnInteraction: false,
-        pauseOnMouseEnter: false,
+        pauseOnMouseEnter: true,
       },
-      allowTouchMove: false,
+      allowTouchMove: true,
+      grabCursor: true,
       breakpoints: {
         480: { slidesPerView: 3, spaceBetween: 25 },
         768: { slidesPerView: 4, spaceBetween: 35 },

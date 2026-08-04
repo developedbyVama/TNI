@@ -995,12 +995,24 @@ section {
 .brands-swiper-container {
   max-width: 1200px;
   margin: 0 auto;
+  // Fade-blur effect on left & right edges
+  -webkit-mask-image: linear-gradient(to right,
+      transparent 0%,
+      $orange 12%,
+      $orange 88%,
+      transparent 100%);
+  mask-image: linear-gradient(to right,
+      transparent 0%,
+      $orange 12%,
+      $orange 88%,
+      transparent 100%);
 
   .brands-swiper {
+    padding: 0.5rem 0;
+
     .swiper-wrapper {
-      -webkit-transition-timing-function: linear !important;
-      -o-transition-timing-function: linear !important;
-      transition-timing-function: linear !important;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
     }
   }
 

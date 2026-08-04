@@ -12760,11 +12760,15 @@ section {
 .brands-swiper-container {
   max-width: 1200px;
   margin: 0 auto;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #F17D16 12%, #F17D16 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #F17D16 12%, #F17D16 88%, transparent 100%);
+}
+.brands-swiper-container .brands-swiper {
+  padding: 0.5rem 0;
 }
 .brands-swiper-container .brands-swiper .swiper-wrapper {
-  -webkit-transition-timing-function: linear !important;
-  -o-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
 .brands-swiper-container .brand-logo-link {
   display: block;

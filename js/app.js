@@ -86,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
       autoplay: {
         delay: 4500,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true,
       },
       pagination: {
         el: '.hero-swiper-pagination',

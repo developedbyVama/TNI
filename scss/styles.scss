@@ -47,6 +47,7 @@ button,
 .brand-nav-btn,
 .testimonial-nav-btn,
 .cat-toggle-btn,
+.cat-nav-btn,
 .blog-read-more {
 
   i[class*="ri-arrow-right"],
@@ -649,6 +650,17 @@ section {
     align-items: center;
     border-radius: 0;
 
+    @media (max-width: 768px) {
+      background-position: 85% center !important;
+
+      &::before {
+        background: linear-gradient(180deg,
+            rgba(15, 23, 42, 0.88) 0%,
+            rgba(15, 23, 42, 0.55) 50%,
+            rgba(15, 23, 42, 0.82) 100%) !important;
+      }
+    }
+
     // Dark Gradient Overlay to ensure text readability over any background image
     &::before {
       content: '';
@@ -668,6 +680,10 @@ section {
   z-index: 2;
   padding: 4rem 1rem;
   max-width: 650px;
+
+  @media (max-width: 768px) {
+    padding: 2.5rem 0.5rem;
+  }
 }
 
 .hero-title {
@@ -808,6 +824,225 @@ section {
 }
 
 // ── 9. CATEGORIES ────────────────────────────────────────────
+// ── 9. CATEGORIES SECTION (NEW DESIGN) ───────────────────────
+
+.cat-section {
+  background-color: #f4f7fb !important;
+}
+
+.cat-section-bar {
+  display: inline-block;
+  width: 28px;
+  height: 3px;
+  background: $orange;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.cat-section-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: $orange;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cat-view-all-btn {
+  border: 1.5px solid $navy;
+  color: $navy;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  transition: all 0.2s;
+  background: transparent;
+
+  &:hover {
+    background: $navy;
+    color: white;
+  }
+
+  i {
+    transition: transform 0.2s;
+  }
+
+  &:hover i {
+    transform: translateX(4px);
+  }
+}
+
+.cat-swiper-container {
+  position: relative;
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .cat-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #e8edf2;
+    color: $navy;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.4rem;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+
+    i {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      line-height: 1 !important;
+      margin: 0 !important;
+    }
+
+    &:hover {
+      background: $navy;
+      color: white;
+      border-color: $navy;
+      box-shadow: 0 6px 18px rgba(32, 56, 116, 0.25);
+    }
+
+    &.cat-btn-prev {
+      left: -20px;
+    }
+
+    &.cat-btn-next {
+      right: -20px;
+    }
+
+    @media (max-width: 768px) {
+      width: 36px;
+      height: 36px;
+      font-size: 1.2rem;
+
+      &.cat-btn-prev {
+        left: -8px;
+      }
+
+      &.cat-btn-next {
+        right: -8px;
+      }
+    }
+  }
+}
+
+.cat-card-new {
+  padding: 12px;
+  display: block;
+  text-decoration: none;
+  background: white;
+  border-radius: 0.7rem;
+  border: 1.5px solid #e8edf2;
+  overflow: visible;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(32, 56, 116, 0.1);
+    border-color: rgba($navy, 0.15);
+
+    .cat-card-cta i {
+      transform: translateX(4px);
+    }
+
+    .cat-card-img img {
+      transform: scale(1.01);
+    }
+  }
+
+  // Rounded top image/background area
+  .cat-card-img {
+    width: 100%;
+    height: 140px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+      display: block;
+    }
+  }
+
+  // Body area — contains the overlapping badge + text
+  .cat-card-body {
+    padding: 0 1rem 1.1rem;
+    position: relative;
+  }
+
+  // Badge that overlaps image → body boundary
+  .cat-badge-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
+    // Pull up by half its height to straddle the boundary
+    margin-top: -22px;
+    margin-left: -9px;
+
+    margin-bottom: 0.6rem;
+    position: relative;
+    z-index: 2;
+
+    i {
+      font-size: 1.15rem;
+    }
+  }
+
+  .cat-card-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e3264;
+    margin-bottom: 0.2rem;
+    line-height: 1.3;
+    display: block;
+  }
+
+  .cat-card-count {
+    font-size: 0.76rem;
+    color: #6b7280;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .cat-card-cta {
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: $orange;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    i {
+      font-size: 0.9rem;
+      transition: transform 0.2s ease;
+    }
+  }
+}
+
+// Keep old .category-card for any legacy references
 .category-card {
   display: block;
   text-align: center;
@@ -866,6 +1101,8 @@ section {
   }
 }
 
+
+
 // ── 10. PRODUCTS SECTION ─────────────────────────────────────
 .product-tabs {
   .nav-tabs {
@@ -911,6 +1148,7 @@ section {
 }
 
 .product-card {
+  padding: 12px;
   border-radius: 0.7rem !important;
   border: 1px solid #e8edf2 !important;
   box-shadow: none !important;
@@ -925,12 +1163,17 @@ section {
   }
 
   .product-img-wrap {
+    border-radius: 0.7rem !important;
     height: 185px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     background: $soft-bg;
+
+    img {
+      border-radius: 0.7rem !important;
+    }
 
     .product-icon {
       font-size: 3.8rem;
@@ -1233,7 +1476,7 @@ section {
 .deal-card {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
-
+  padding: 12px;
   border-radius: 0.7rem;
   overflow: hidden;
   transition: transform 0.25s ease, border-color 0.25s;
@@ -1246,11 +1489,16 @@ section {
 
   .deal-img-wrap {
     height: 190px;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     background: rgba(255, 255, 255, 0.03);
+
+    img {
+      border-radius: 0.5rem;
+    }
 
     .deal-icon {
       font-size: 4.5rem;
@@ -1333,7 +1581,7 @@ section {
 
 // ── 13. CONTENT & MARKETING ──────────────────────────────────
 .story-banner {
-  background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url('https://placehold.co/1200x500/0f172a/ffffff?text=Modern+Storefront');
+  background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url('../img/7.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1357,6 +1605,7 @@ section {
 
 .blog-card {
   border-radius: 0.7rem;
+  padding: 12px;
   overflow: hidden;
   border: 1px solid #e8edf2 !important;
   box-shadow: none !important;
@@ -1371,10 +1620,15 @@ section {
 
   .blog-img-wrap {
     height: 170px;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: $soft-bg;
+
+    img {
+      border-radius: 0.5rem;
+    }
 
     .blog-icon {
       font-size: 3rem;
@@ -1488,19 +1742,63 @@ section {
   border-radius: 0.7rem;
   border: 1px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  padding: 1.5rem;
+  padding: 2.25rem 1.5rem 1.5rem 1.5rem;
   height: 100%;
-  transition: transform 0.25s, box-shadow 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  position: relative;
+  overflow: hidden;
+
+  .quote-icon-bg {
+    position: absolute;
+    bottom: 0px;
+    right: 37px;
+    font-size: 5rem;
+    color: rgba($soft-bg, 0.8);
+    line-height: 1;
+    z-index: 0;
+  }
+
+  .quote-icon-top {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    color: $orange;
+    line-height: 1;
+    z-index: 1;
+  }
+
+  .verified-badge {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $orange;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 0.4rem 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba($orange, 0.3);
+
+    i {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+  }
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(32, 56, 116, 0.08) !important;
-  }
+    box-shadow: 0 12px 30px rgba($orange, 0.08) !important;
+    border-color: rgba($orange, 0.4);
 
-  .review-stars {
-    font-size: 0.9rem;
-    color: #f59e0b;
-    margin-bottom: 0.75rem;
+    .verified-badge {
+      top: -5px;
+    }
   }
 
   .review-quote {
@@ -1508,7 +1806,18 @@ section {
     color: #374151;
     line-height: 1.65;
     font-style: italic;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .review-stars {
+    font-size: 0.9rem;
+    color: #f59e0b;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
   }
 
   .reviewer-avatar {
@@ -1522,17 +1831,23 @@ section {
     font-weight: 700;
     color: white;
     flex-shrink: 0;
+    position: relative;
+    z-index: 1;
   }
 
   .reviewer-name {
     font-size: 0.88rem;
     font-weight: 700;
     color: $navy;
+    position: relative;
+    z-index: 1;
   }
 
   .reviewer-loc {
     font-size: 0.72rem;
     color: #9ca3af;
+    position: relative;
+    z-index: 1;
 
     i {
       vertical-align: middle;
@@ -1811,4 +2126,134 @@ body {
   @media (max-width: 992px) {
     overflow-x: hidden;
   }
+}
+
+// ── 16. INLINE STYLE REPLACEMENT CUSTOM CLASSES ───────────────────────
+
+// Global Image Object-Fit Covers
+.product-img-wrap img,
+.deal-img-wrap img,
+.blog-img-wrap img {
+  object-fit: cover;
+}
+
+// Reset button
+.btn-reset {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+// Hero Slide Background Images
+.hero-slide-1 { background-image: url('../img/1.jpeg'); }
+.hero-slide-2 { background-image: url('../img/2.jpeg'); }
+.hero-slide-3 { background-image: url('../img/3.jpeg'); }
+.hero-slide-4 { background-image: url('../img/4.jpeg'); }
+.hero-slide-5 { background-image: url('../img/5.jpeg'); }
+.hero-slide-6 { background-image: url('../img/6.jpeg'); }
+
+// Brand Section Text
+.brand-title-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+// Category Section Custom Classes
+.cat-subtitle {
+  font-size: 0.9rem;
+}
+.cat-bg-blue { background: #dbeafe; }
+.cat-badge-blue { background: #eff6ff; }
+.cat-bg-pink { background: #fce7f3; }
+.cat-badge-pink { background: #fdf2f8; }
+.cat-bg-green { background: #d1fae5; }
+.cat-badge-green { background: #f0fdf4; }
+.cat-bg-yellow { background: #fef9c3; }
+.cat-badge-yellow { background: #fefce8; }
+.cat-bg-purple { background: #ede9fe; }
+.cat-badge-purple { background: #f5f3ff; }
+.cat-bg-orange { background: #ffedd5; }
+.cat-badge-orange { background: #fff7ed; }
+.cat-bg-sky { background: #e0f2fe; }
+.cat-badge-sky { background: #f0f9ff; }
+.cat-bg-magenta { background: #fae8ff; }
+.cat-badge-magenta { background: #fdf4ff; }
+.cat-icon-navy-theme { color: #203874; }
+
+// Deal Progress Bar Widths
+.deal-progress-72 { width: 72%; }
+.deal-progress-55 { width: 55%; }
+.deal-progress-38 { width: 38%; }
+
+// Testimonials & Proof Section Classes
+.trust-section-bg {
+  background-color: #f4f7fb !important;
+}
+.huge-quote-bg {
+  font-size: 25rem;
+  color: rgba(0, 0, 0, 0.025);
+  line-height: 1;
+  z-index: 0;
+  pointer-events: none;
+
+  &.huge-quote-left {
+    top: -2%;
+    left: -2%;
+  }
+  &.huge-quote-right {
+    top: -2%;
+    right: -2%;
+  }
+}
+.testi-tag {
+  color: #F17D16;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+}
+.testi-title {
+  color: #122044;
+}
+.testi-stars {
+  color: #f59e0b;
+  font-size: 1.5rem;
+}
+.testi-score {
+  color: #111827;
+}
+.testi-count {
+  color: #6b7280;
+}
+.avatar-blue { background: #203874; }
+.avatar-orange { background: #F17D16; }
+.avatar-green { background: #16a34a; }
+.avatar-purple { background: #8b5cf6; }
+.avatar-pink { background: #ec4899; }
+
+// Trust Badges Custom Container & Items
+.trust-badges-container {
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+.trust-icon-wrap {
+  width: 50px;
+  height: 50px;
+  background: #f1f5f9;
+  color: #1e3264;
+}
+.trust-title {
+  font-size: 0.95rem;
+}
+.trust-desc {
+  font-size: 0.8rem;
+}
+.trust-divider {
+  width: 1px;
+  height: 40px;
+  background: #e5e7eb;
+}
+
+// Newsletter Section Class
+.section-tag-light {
+  color: rgba(255, 255, 255, 0.7);
 }

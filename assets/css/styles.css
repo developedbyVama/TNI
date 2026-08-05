@@ -13544,6 +13544,7 @@ section {
 .newsletter-section .newsletter-form {
   display: flex;
   max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   border-radius: 50px;
   overflow: hidden;
@@ -13551,11 +13552,18 @@ section {
 }
 .newsletter-section .newsletter-form input[type=email] {
   flex: 1;
+  min-width: 0;
   border: none;
-  padding: 0.9rem 1.5rem;
-  font-size: 0.9rem;
+  padding: 0.85rem 1.2rem;
+  font-size: 0.88rem;
   border-radius: 0;
   font-family: inherit;
+}
+@media (max-width: 576px) {
+  .newsletter-section .newsletter-form input[type=email] {
+    padding: 0.7rem 0.85rem;
+    font-size: 0.8rem;
+  }
 }
 .newsletter-section .newsletter-form input[type=email]:focus {
   outline: none;
@@ -13565,13 +13573,29 @@ section {
   border: none;
   background: #F17D16;
   color: white;
-  padding: 0.9rem 1.65rem;
-  font-size: 0.87rem;
+  padding: 0.85rem 1.4rem;
+  font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
   font-family: inherit;
   transition: background 0.2s;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+@media (max-width: 576px) {
+  .newsletter-section .newsletter-form button {
+    padding: 0.7rem 0.95rem;
+    font-size: 0.8rem;
+  }
+}
+.newsletter-section .newsletter-form button i {
+  font-size: 0.88rem;
+  margin-left: 0 !important;
+  display: inline-block;
 }
 .newsletter-section .newsletter-form button:hover {
   background: rgb(82.1983011828%, 41.2755417957%, 4.9389537191%);
@@ -13630,9 +13654,12 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 .site-footer .footer-link-list a i {
   font-size: 0.9rem;
+  flex-shrink: 0;
 }
 .site-footer .footer-link-list a:hover {
   color: #F17D16;
@@ -13698,7 +13725,14 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
+  white-space: nowrap;
   transition: all 0.25s ease;
+}
+@media (max-width: 576px) {
+  .footer-more-btn {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.68rem;
+  }
 }
 .footer-more-btn i {
   color: #F17D16;
@@ -13921,20 +13955,67 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
+@media (max-width: 991.98px) {
+  .trust-badges-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding: 0.9rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .trust-badge-item {
+    width: 100% !important;
+    flex-direction: row !important;
+    text-align: left !important;
+    background: #f8fafc;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #f1f5f9;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+}
 
 .trust-icon-wrap {
   width: 50px;
   height: 50px;
   background: #f1f5f9;
   color: #1e3264;
+  flex-shrink: 0;
+}
+@media (max-width: 991.98px) {
+  .trust-icon-wrap {
+    width: 38px !important;
+    height: 38px !important;
+    background: #eff6ff !important;
+    color: #203874 !important;
+  }
+  .trust-icon-wrap i {
+    font-size: 1.15rem !important;
+  }
 }
 
 .trust-title {
   font-size: 0.95rem;
 }
+@media (max-width: 991.98px) {
+  .trust-title {
+    font-size: 0.8rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 2px !important;
+  }
+}
 
 .trust-desc {
   font-size: 0.8rem;
+}
+@media (max-width: 991.98px) {
+  .trust-desc {
+    font-size: 0.7rem !important;
+    line-height: 1.2 !important;
+  }
 }
 
 .trust-divider {

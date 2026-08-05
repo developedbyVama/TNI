@@ -11,10 +11,9 @@ $btn-border-radius: 50px;
 $btn-border-radius-sm: 50px;
 $btn-border-radius-lg: 50px;
 
-// ── 2. Import Bootstrap ──────────────────────────────────────
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// ── 3. Custom Variables ──────────────────────────────────────
+
 $navy: #1e3264;
 $navy-dark: #122044;
 $orange: #F17D16;
@@ -23,14 +22,13 @@ $card-bg: #ffffff;
 $soft-bg: #f1f5f9;
 $soft-blue: #eef2ff;
 
-// ── 4. Base ──────────────────────────────────────────────────
+
 body {
   font-family: 'Inter', system-ui, sans-serif;
   color: #1f2937;
   background: $navy-dark;
 }
 
-// ── Global Button Shape: Pill border-radius on all sizes ──────
 .btn,
 .btn-sm,
 .btn-lg {
@@ -106,8 +104,7 @@ button,
 }
 
 // ── 6. MAIN NAVBAR ───────────────────────────────────────────
-// Using position:fixed so transform works reliably on all mobile browsers
-// (position:sticky + transform is broken on iOS Safari)
+
 header {
   position: fixed;
   top: 0;
@@ -116,7 +113,7 @@ header {
   width: 100%;
   z-index: 1040;
   transition: transform 0.35s ease;
-  will-change: transform; // GPU accelerate for smooth mobile performance
+  will-change: transform;
 
   &.navbar--hidden {
     transform: translateY(-100%);
@@ -508,7 +505,7 @@ header {
   bottom: 0 !important;
   z-index: 1060 !important;
   border-left: none;
-  background: $navy !important; // rich primary navy blue
+  background: $navy !important;
   color: rgba(255, 255, 255, 0.9);
 
   .offcanvas-header {
@@ -521,12 +518,12 @@ header {
     }
 
     .btn-close {
-      filter: invert(1) brightness(2); // make X white
+      filter: invert(1) brightness(2);
       opacity: 0.8;
     }
   }
 
-  // Scrollable categories section heading
+
   .text-muted {
     color: rgba(255, 255, 255, 0.45) !important;
   }
@@ -604,7 +601,7 @@ header {
   }
 }
 
-// Blur effect for offcanvas backdrop
+
 .offcanvas-backdrop.show {
   backdrop-filter: blur(4px) !important;
   background-color: rgba(0, 0, 0, 0.5) !important;
@@ -623,7 +620,7 @@ section {
 
 
 
-// ── 7. HERO SLIDER SECTION (BACKGROUND IMAGE SWIPER) ────────
+
 .hero-section {
   background: $navy-dark;
   position: relative;
@@ -801,7 +798,6 @@ section {
   }
 }
 
-// ── 8. SECTION HEADERS ───────────────────────────────────────
 .section-tag {
   display: block;
   font-size: 0.73rem;
@@ -823,8 +819,8 @@ section {
   }
 }
 
-// ── 9. CATEGORIES ────────────────────────────────────────────
-// ── 9. CATEGORIES SECTION (NEW DESIGN) ───────────────────────
+// categoties
+
 
 .cat-section {
   background-color: #f4f7fb !important;
@@ -961,7 +957,7 @@ section {
     }
   }
 
-  // Rounded top image/background area
+
   .cat-card-img {
     width: 100%;
     height: 140px;
@@ -982,13 +978,12 @@ section {
     }
   }
 
-  // Body area — contains the overlapping badge + text
   .cat-card-body {
     padding: 0 1rem 1.1rem;
     position: relative;
   }
 
-  // Badge that overlaps image → body boundary
+
   .cat-badge-icon {
     width: 44px;
     height: 44px;
@@ -998,7 +993,6 @@ section {
     justify-content: center;
     border: 2.5px solid white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
-    // Pull up by half its height to straddle the boundary
     margin-top: -22px;
     margin-left: -9px;
 
@@ -1042,7 +1036,6 @@ section {
   }
 }
 
-// Keep old .category-card for any legacy references
 .category-card {
   display: block;
   text-align: center;
@@ -1103,7 +1096,7 @@ section {
 
 
 
-// ── 10. PRODUCTS SECTION ─────────────────────────────────────
+// products
 .product-tabs {
   .nav-tabs {
     border-bottom: 2px solid #e5e7eb;
@@ -1112,13 +1105,13 @@ section {
     overflow-x: auto;
     overflow-y: visible;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; // hide scrollbar Firefox
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
       display: none;
     }
 
-    // hide scrollbar Chrome/Safari
+
 
     .nav-link {
       color: #6b7280;
@@ -1315,7 +1308,7 @@ section {
   }
 }
 
-// ── 11. BRANDS SWIPER ───────────────────────────────────────
+// brands
 .brands-section {
   background: white;
   // border-top: 1px solid #e8edf2;
@@ -1325,7 +1318,6 @@ section {
 .brands-swiper-container {
   max-width: 1200px;
   margin: 0 auto;
-  // Fade-blur effect on left & right edges
   -webkit-mask-image: linear-gradient(to right,
       transparent 0%,
       $orange 12%,
@@ -1409,7 +1401,7 @@ section {
   }
 }
 
-// ── 12. DEALS OF THE DAY ─────────────────────────────────────
+// deals 
 .deals-section {
   background: linear-gradient(135deg, $dark-surface 0%, #1a2d5e 100%);
   position: relative;
@@ -1579,7 +1571,7 @@ section {
   }
 }
 
-// ── 13. CONTENT & MARKETING ──────────────────────────────────
+// blog
 .story-banner {
   background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url('../img/7.jpeg');
   background-size: cover;
@@ -1678,7 +1670,7 @@ section {
   }
 }
 
-// ── 14. TRUST SIGNALS ────────────────────────────────────────
+//trust
 .stars-display {
   color: #f59e0b;
   font-size: 1.15rem;
@@ -1892,7 +1884,7 @@ section {
   }
 }
 
-// ── 15. NEWSLETTER ───────────────────────────────────────────
+// newsletter
 .newsletter-section {
   background: linear-gradient(135deg, darken($navy, 5%) 0%, $navy 100%);
 
@@ -1908,6 +1900,7 @@ section {
   .newsletter-form {
     display: flex;
     max-width: 500px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 50px;
     overflow: hidden;
@@ -1915,11 +1908,17 @@ section {
 
     input[type="email"] {
       flex: 1;
+      min-width: 0;
       border: none;
-      padding: 0.9rem 1.5rem;
-      font-size: 0.9rem;
+      padding: 0.85rem 1.2rem;
+      font-size: 0.88rem;
       border-radius: 0;
       font-family: inherit;
+
+      @media (max-width: 576px) {
+        padding: 0.7rem 0.85rem;
+        font-size: 0.8rem;
+      }
 
       &:focus {
         outline: none;
@@ -1931,13 +1930,29 @@ section {
       border: none;
       background: $orange;
       color: white;
-      padding: 0.9rem 1.65rem;
-      font-size: 0.87rem;
+      padding: 0.85rem 1.4rem;
+      font-size: 0.85rem;
       font-weight: 700;
       cursor: pointer;
       white-space: nowrap;
       font-family: inherit;
       transition: background 0.2s;
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+
+      @media (max-width: 576px) {
+        padding: 0.7rem 0.95rem;
+        font-size: 0.8rem;
+      }
+
+      i {
+        font-size: 0.88rem;
+        margin-left: 0 !important;
+        display: inline-block;
+      }
 
       &:hover {
         background: darken($orange, 8%);
@@ -1957,7 +1972,7 @@ section {
   }
 }
 
-// ── 16. FOOTER ───────────────────────────────────────────────
+//footer
 .site-footer {
   background: $dark-surface;
   color: rgba(255, 255, 255, 0.6);
@@ -2007,9 +2022,12 @@ section {
       display: inline-flex;
       align-items: center;
       gap: 0.3rem;
+      word-break: break-word;
+      overflow-wrap: anywhere;
 
       i {
         font-size: 0.9rem;
+        flex-shrink: 0;
       }
 
       &:hover {
@@ -2087,7 +2105,13 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
+  white-space: nowrap;
   transition: all 0.25s ease;
+
+  @media (max-width: 576px) {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.68rem;
+  }
 
   i {
     color: $orange;
@@ -2128,9 +2152,8 @@ body {
   }
 }
 
-// ── 16. INLINE STYLE REPLACEMENT CUSTOM CLASSES ───────────────────────
+// inline style replacement custom classes
 
-// Global Image Object-Fit Covers
 .product-img-wrap img,
 .deal-img-wrap img,
 .blog-img-wrap img {
@@ -2146,12 +2169,29 @@ body {
 }
 
 // Hero Slide Background Images
-.hero-slide-1 { background-image: url('../img/1.jpeg'); }
-.hero-slide-2 { background-image: url('../img/2.jpeg'); }
-.hero-slide-3 { background-image: url('../img/3.jpeg'); }
-.hero-slide-4 { background-image: url('../img/4.jpeg'); }
-.hero-slide-5 { background-image: url('../img/5.jpeg'); }
-.hero-slide-6 { background-image: url('../img/6.jpeg'); }
+.hero-slide-1 {
+  background-image: url('../img/1.jpeg');
+}
+
+.hero-slide-2 {
+  background-image: url('../img/2.jpeg');
+}
+
+.hero-slide-3 {
+  background-image: url('../img/3.jpeg');
+}
+
+.hero-slide-4 {
+  background-image: url('../img/4.jpeg');
+}
+
+.hero-slide-5 {
+  background-image: url('../img/5.jpeg');
+}
+
+.hero-slide-6 {
+  background-image: url('../img/6.jpeg');
+}
 
 // Brand Section Text
 .brand-title-uppercase {
@@ -2163,33 +2203,93 @@ body {
 .cat-subtitle {
   font-size: 0.9rem;
 }
-.cat-bg-blue { background: #dbeafe; }
-.cat-badge-blue { background: #eff6ff; }
-.cat-bg-pink { background: #fce7f3; }
-.cat-badge-pink { background: #fdf2f8; }
-.cat-bg-green { background: #d1fae5; }
-.cat-badge-green { background: #f0fdf4; }
-.cat-bg-yellow { background: #fef9c3; }
-.cat-badge-yellow { background: #fefce8; }
-.cat-bg-purple { background: #ede9fe; }
-.cat-badge-purple { background: #f5f3ff; }
-.cat-bg-orange { background: #ffedd5; }
-.cat-badge-orange { background: #fff7ed; }
-.cat-bg-sky { background: #e0f2fe; }
-.cat-badge-sky { background: #f0f9ff; }
-.cat-bg-magenta { background: #fae8ff; }
-.cat-badge-magenta { background: #fdf4ff; }
-.cat-icon-navy-theme { color: #203874; }
+
+.cat-bg-blue {
+  background: #dbeafe;
+}
+
+.cat-badge-blue {
+  background: #eff6ff;
+}
+
+.cat-bg-pink {
+  background: #fce7f3;
+}
+
+.cat-badge-pink {
+  background: #fdf2f8;
+}
+
+.cat-bg-green {
+  background: #d1fae5;
+}
+
+.cat-badge-green {
+  background: #f0fdf4;
+}
+
+.cat-bg-yellow {
+  background: #fef9c3;
+}
+
+.cat-badge-yellow {
+  background: #fefce8;
+}
+
+.cat-bg-purple {
+  background: #ede9fe;
+}
+
+.cat-badge-purple {
+  background: #f5f3ff;
+}
+
+.cat-bg-orange {
+  background: #ffedd5;
+}
+
+.cat-badge-orange {
+  background: #fff7ed;
+}
+
+.cat-bg-sky {
+  background: #e0f2fe;
+}
+
+.cat-badge-sky {
+  background: #f0f9ff;
+}
+
+.cat-bg-magenta {
+  background: #fae8ff;
+}
+
+.cat-badge-magenta {
+  background: #fdf4ff;
+}
+
+.cat-icon-navy-theme {
+  color: #203874;
+}
 
 // Deal Progress Bar Widths
-.deal-progress-72 { width: 72%; }
-.deal-progress-55 { width: 55%; }
-.deal-progress-38 { width: 38%; }
+.deal-progress-72 {
+  width: 72%;
+}
+
+.deal-progress-55 {
+  width: 55%;
+}
+
+.deal-progress-38 {
+  width: 38%;
+}
 
 // Testimonials & Proof Section Classes
 .trust-section-bg {
   background-color: #f4f7fb !important;
 }
+
 .huge-quote-bg {
   font-size: 25rem;
   color: rgba(0, 0, 0, 0.025);
@@ -2201,52 +2301,121 @@ body {
     top: -2%;
     left: -2%;
   }
+
   &.huge-quote-right {
     top: -2%;
     right: -2%;
   }
 }
+
 .testi-tag {
   color: #F17D16;
   font-size: 0.85rem;
   letter-spacing: 0.15em;
 }
+
 .testi-title {
   color: #122044;
 }
+
 .testi-stars {
   color: #f59e0b;
   font-size: 1.5rem;
 }
+
 .testi-score {
   color: #111827;
 }
+
 .testi-count {
   color: #6b7280;
 }
-.avatar-blue { background: #203874; }
-.avatar-orange { background: #F17D16; }
-.avatar-green { background: #16a34a; }
-.avatar-purple { background: #8b5cf6; }
-.avatar-pink { background: #ec4899; }
+
+.avatar-blue {
+  background: #203874;
+}
+
+.avatar-orange {
+  background: #F17D16;
+}
+
+.avatar-green {
+  background: #16a34a;
+}
+
+.avatar-purple {
+  background: #8b5cf6;
+}
+
+.avatar-pink {
+  background: #ec4899;
+}
 
 // Trust Badges Custom Container & Items
 .trust-badges-container {
   border: 1px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+
+  @media (max-width: 991.98px) {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding: 0.9rem !important;
+  }
 }
+
+.trust-badge-item {
+  @media (max-width: 991.98px) {
+    width: 100% !important;
+    flex-direction: row !important;
+    text-align: left !important;
+    background: #f8fafc;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #f1f5f9;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+}
+
 .trust-icon-wrap {
   width: 50px;
   height: 50px;
   background: #f1f5f9;
   color: #1e3264;
+  flex-shrink: 0;
+
+  @media (max-width: 991.98px) {
+    width: 38px !important;
+    height: 38px !important;
+    background: #eff6ff !important;
+    color: #203874 !important;
+
+    i {
+      font-size: 1.15rem !important;
+    }
+  }
 }
+
 .trust-title {
   font-size: 0.95rem;
+
+  @media (max-width: 991.98px) {
+    font-size: 0.8rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 2px !important;
+  }
 }
+
 .trust-desc {
   font-size: 0.8rem;
+
+  @media (max-width: 991.98px) {
+    font-size: 0.7rem !important;
+    line-height: 1.2 !important;
+  }
 }
+
 .trust-divider {
   width: 1px;
   height: 40px;

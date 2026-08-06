@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TNI Store — Premium Products &amp; Brands Online</title>
+  <title>About Us — TNI Professionals | Your Strategic Technology Partner</title>
   <meta name="description"
-    content="TNI Store offers thousands of products across electronics, fashion, home, sports, and beauty. Premium brands, unbeatable prices, fast delivery." />
-  <meta name="keywords" content="TNI, online shopping, electronics, fashion, home, deals, best sellers" />
+    content="Learn about TNI Professionals — your strategic technology partner for enterprise hardware, high-performance systems, networking, and digital solutions." />
+  <meta name="keywords"
+    content="TNI Professionals, About TNI, enterprise hardware, IT technology partner, networking, servers, IT procurement" />
 
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,11 +23,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <style>
+    .about-card-hover {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .about-card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(32, 56, 116, 0.12) !important;
+    }
+  </style>
 </head>
 
 <body>
-
-
 
   <header>
 
@@ -972,14 +981,13 @@
             </div>
           </li>
           <li class="nav-item"><a class="nav-link px-0 py-0" href="#partners">Partners</a></li>
-          <li class="nav-item"><a class="nav-link px-0 py-0" href="about.html">About us</a></li>
+          <li class="nav-item"><a class="nav-link px-0 py-0 active" href="about.html">About us</a></li>
           <li class="nav-item"><a class="nav-link px-0 py-0" href="#why-tni">Why TNI ?</a></li>
         </ul>
       </div>
     </nav>
 
   </header>
-
 
   <div class="offcanvas offcanvas-end mobile-offcanvas" tabindex="-1" id="mobileOffcanvas"
     aria-labelledby="mobileOffcanvasLabel">
@@ -1415,7 +1423,8 @@
       <div class="mt-2">
         <ul class="list-unstyled d-flex flex-column mb-0">
           <li><a href="#partners" class="d-block py-2 fw-semibold text-decoration-none">Partners</a></li>
-          <li><a href="about.html" class="d-block py-2 fw-semibold text-decoration-none">About us</a></li>
+          <li><a href="about.html" class="d-block py-2 fw-bold text-orange text-decoration-none"
+              style="color: #ff6b00 !important;">About us</a></li>
           <li><a href="#why-tni" class="d-block py-2 fw-semibold text-decoration-none">Why TNI ?</a></li>
         </ul>
       </div>
@@ -1423,870 +1432,27 @@
   </div>
 
   <main>
+    <!-- About Page Hero Banner with Background Image -->
+    <section class="about-hero-section py-5 position-relative overflow-hidden">
+      <div class="container py-lg-5 text-center text-lg-start">
+        <div class="row align-items-center">
+          <div class="col-lg-9 col-xl-8">
 
-
-    <section class="hero-section py-0" id="hero" aria-label="Main promotional slider">
-      <div class="hero-swiper-container position-relative">
-
-
-        <div class="swiper hero-swiper">
-          <div class="swiper-wrapper">
-
-
-            <!-- Slide 1: Systems -->
-            <div class="swiper-slide hero-slide-1">
-              <div class="container px-md-5">
-                <div class="hero-slide-content">
-                  <h1 class="hero-title">
-                    Built for Real Work. <em>Engineered to Perform.</em>
-                  </h1>
-                  <p class="hero-subtitle">
-                    Powerful enterprise desktops, high-speed servers, and custom workstations—hand-picked to run your
-                    business without compromise.
-                  </p>
-                  <div class="d-flex flex-wrap gap-2 gap-sm-3">
-                    <a href="#products" class="btn btn-secondary btn-lg px-3 px-sm-4 text-white fw-semibold">
-                      Explore Systems <i class="ri-arrow-right-line ms-1"></i>
-                    </a>
-                    <a href="#deals" class="btn btn-outline-light btn-lg px-3 px-sm-4 fw-semibold">
-                      View Hardware Catalog
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 2: Printing -->
-            <div class="swiper-slide hero-slide-2">
-              <div class="container px-md-5">
-                <div class="hero-slide-content">
-                  <h1 class="hero-title">
-                    Printing Made Simple. <em>Quality You Can Trust.</em>
-                  </h1>
-                  <p class="hero-subtitle">
-                    From heavy-duty office laser printers to genuine toner cartridges, get the reliable gear your
-                    workspace actually needs every day.
-                  </p>
-                  <div class="d-flex flex-wrap gap-2 gap-sm-3">
-                    <a href="#products" class="btn btn-secondary btn-lg px-3 px-sm-4 text-white fw-semibold">
-                      Find Your Printer <i class="ri-arrow-right-line ms-1"></i>
-                    </a>
-                    <a href="#deals" class="btn btn-outline-light btn-lg px-3 px-sm-4 fw-semibold">
-                      Browse Genuine Supplies
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3: Accessories -->
-            <div class="swiper-slide hero-slide-3">
-              <div class="container px-md-5">
-                <div class="hero-slide-content">
-                  <h1 class="hero-title">
-                    Tech Accessories <em>That Just Work.</em>
-                  </h1>
-                  <p class="hero-subtitle">
-                    Durable tempered glass protection, fast MagSafe wireless chargers, and everyday gear built to handle
-                    real life.
-                  </p>
-                  <div class="d-flex flex-wrap gap-2 gap-sm-3">
-                    <a href="#products" class="btn btn-secondary btn-lg px-3 px-sm-4 text-white fw-semibold">
-                      Upgrade Your Setup <i class="ri-arrow-right-line ms-1"></i>
-                    </a>
-                    <a href="#deals" class="btn btn-outline-light btn-lg px-3 px-sm-4 fw-semibold">
-                      Shop Protection Kits
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 4: Optical Gear -->
-            <div class="swiper-slide hero-slide-4">
-              <div class="container px-md-5">
-                <div class="hero-slide-content">
-                  <h1 class="hero-title">
-                    Capture Every Detail. <em>Tell Your Story.</em>
-                  </h1>
-                  <p class="hero-subtitle">
-                    Precision optical lenses, mirrorless camera kits, and studio essentials designed to bring your
-                    creative vision to life.
-                  </p>
-                  <div class="d-flex flex-wrap gap-2 gap-sm-3">
-                    <a href="#products" class="btn btn-secondary btn-lg px-3 px-sm-4 text-white fw-semibold">
-                      Discover Camera Gear <i class="ri-arrow-right-line ms-1"></i>
-                    </a>
-                    <a href="#deals" class="btn btn-outline-light btn-lg px-3 px-sm-4 fw-semibold">
-                      Explore Photo Kits
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 5: Laptops -->
-            <div class="swiper-slide hero-slide-5">
-              <div class="container px-md-5">
-                <div class="hero-slide-content">
-                  <h1 class="hero-title">
-                    Laptops Built <em>For Where You Work.</em>
-                  </h1>
-                  <p class="hero-subtitle">
-                    Ultra-light ultrabooks and high-power workstations with true all-day battery life, performance, and
-                    peace of mind.
-                  </p>
-                  <div class="d-flex flex-wrap gap-2 gap-sm-3">
-                    <a href="#products" class="btn btn-secondary btn-lg px-3 px-sm-4 text-white fw-semibold">
-                      Find Your Laptop <i class="ri-arrow-right-line ms-1"></i>
-                    </a>
-                    <a href="#deals" class="btn btn-outline-light btn-lg px-3 px-sm-4  fw-semibold">
-                      Compare Models
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="swiper-slide hero-slide-6">
-              <div class="container px-md-5">
-                <div class="hero-slide-content">
-                  <h1 class="hero-title">
-                    4K Displays <em>&amp; Conferencing</em>
-                  </h1>
-                  <p class="hero-subtitle">
-                    Color-accurate 4K monitors and video conferencing setups designed for modern hybrid teams.
-                  </p>
-                  <div class="d-flex flex-wrap gap-2 gap-sm-3">
-                    <a href="#products" class="btn btn-secondary btn-lg px-3 px-sm-4 text-white fw-semibold">
-                      Explore Displays <i class="ri-arrow-right-line ms-1"></i>
-                    </a>
-                    <a href="#deals" class="btn btn-outline-light btn-lg px-3 px-sm-4 fw-semibold">
-                      Meeting Solutions
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="swiper-pagination hero-swiper-pagination"></div>
-        </div>
-
-
-        <div class="hero-nav-btn hero-btn-prev " id="heroPrevBtn" aria-label="Previous slide">
-          <i class="ri-arrow-left-s-line"></i>
-        </div>
-        <div class="hero-nav-btn hero-btn-next  " id="heroNextBtn" aria-label="Next slide">
-          <i class="ri-arrow-right-s-line"></i>
-        </div>
-
-      </div>
-    </section>
-
-
-    <section id="brands" class="brands-section py-5 bg-white" aria-label="Featured brands">
-      <div class="container mb-3">
-        <p class="text-center fs-3 fw-semibold text-primary mb-0 d-none d-md-block brand-title-uppercase">
-          500+ Trusted Brands — Available Direct
-        </p>
-        <p class="text-center fs-3 fw-semibold text-primary mb-0 d-md-none brand-title-uppercase">
-          500+ Trusted Brands <br> Available Direct
-        </p>
-      </div>
-
-
-      <div class="brands-swiper-container position-relative px-4 mt-4">
-        <div class="swiper brands-swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo1.png" alt="logo" class="img-fluid brand-logo-img">
+            <h1 class="display-4 fw-bold mb-3 text-white">
+              Built for Enterprise Impact. <span class="text-secondary">Engineered to Scale.</span>
+            </h1>
+            <p class="lead text-light opacity-90 mb-4 about-hero-lead">
+              TNI is more than a technology supplier—we are your strategic partner in building secure, scalable, and
+              high-performance IT environments. From enterprise servers and networking infrastructure to essential
+              workplace supplies, we make tech procurement simple, authentic, and dependable.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+              <a href="index.html#products" class="btn btn-secondary btn-lg px-3 px-sm-4 text-white fw-semibold">
+                Explore Products <i class="ri-arrow-right-line ms-1"></i>
               </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo2.png" alt="logo" class="img-fluid brand-logo-img">
+              <a href="#contact" class="btn btn-outline-light btn-lg px-4">
+                Talk to an Expert
               </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo3.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo4.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo5.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo6.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo7.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo8.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo9.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo10.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo11.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-            <div class="swiper-slide text-center">
-              <a href="#brand" class="brand-logo-link">
-                <img src="assets/img/brand-logo/logo12.png" alt="logo" class="img-fluid brand-logo-img">
-              </a>
-            </div>
-
-          </div>
-        </div>
-    </section>
-
-    <section id="categories" class="bg-light cat-section" aria-label="Featured categories">
-      <div class="container">
-
-
-        <div class="d-flex justify-content-between align-items-center mb-5">
-          <div>
-            <div class="d-flex align-items-center gap-2 mb-2">
-              <!-- <span class="cat-section-bar"></span> -->
-              <span class="cat-section-tag">EXPLORE COLLECTIONS</span>
-            </div>
-            <h2 class="section-title mb-1">Featured Categories</h2>
-            <!-- <p class="text-muted mb-0 cat-subtitle">Shop from our most popular categories with top brands
-              and unbeatable deals.</p> -->
-          </div>
-          <a href="#" class="btn cat-view-all-btn d-flex align-items-center gap-2">
-            View All <i class="ri-arrow-right-line"></i>
-          </a>
-        </div>
-
-
-        <div class="cat-swiper-container position-relative px-md-2">
-          <div class="swiper cat-swiper py-2">
-            <div class="swiper-wrapper">
-
-
-              <div class="swiper-slide">
-                <a href="#products" class="cat-card-new" id="catSystems">
-                  <div class="cat-card-img cat-bg-blue">
-                    <img src="./assets/img/featured/system.jpg" alt="Systems" />
-                  </div>
-                  <div class="cat-card-body">
-                    <div class="cat-badge-icon cat-badge-blue">
-                      <i class="ri-cpu-line cat-icon-navy-theme"></i>
-                    </div>
-                    <span class="cat-card-name">Systems</span>
-                    <span class="cat-card-count">1,200+ Items</span>
-                    <div class="cat-card-cta">Explore Now <i class="ri-arrow-right-line"></i></div>
-                  </div>
-                </a>
-              </div>
-
-
-              <div class="swiper-slide">
-                <a href="#products" class="cat-card-new" id="catDisplays">
-                  <div class="cat-card-img cat-bg-pink">
-                    <img src="./assets/img/featured/display.jpg" alt="Displays" />
-                  </div>
-                  <div class="cat-card-body">
-                    <div class="cat-badge-icon cat-badge-pink">
-                      <i class="ri-tv-2-line cat-icon-navy-theme"></i>
-                    </div>
-                    <span class="cat-card-name">Displays &amp; Projectors</span>
-                    <span class="cat-card-count">850+ Items</span>
-                    <div class="cat-card-cta">Explore Now <i class="ri-arrow-right-line"></i></div>
-                  </div>
-                </a>
-              </div>
-
-
-              <div class="swiper-slide">
-                <a href="#products" class="cat-card-new" id="catNetworking">
-                  <div class="cat-card-img cat-bg-green">
-                    <img src="./assets/img/featured/network.jpg" alt="Networking" />
-                  </div>
-                  <div class="cat-card-body">
-                    <div class="cat-badge-icon cat-badge-green">
-                      <i class="ri-router-line cat-icon-navy-theme"></i>
-                    </div>
-                    <span class="cat-card-name">Networking</span>
-                    <span class="cat-card-count">640+ Items</span>
-                    <div class="cat-card-cta">Explore Now <i class="ri-arrow-right-line"></i></div>
-                  </div>
-                </a>
-              </div>
-
-
-              <div class="swiper-slide">
-                <a href="#products" class="cat-card-new" id="catAudio">
-                  <div class="cat-card-img cat-bg-yellow">
-                    <img src="./assets/img/featured/audio.jpg" alt="Audio &amp; Video" />
-                  </div>
-                  <div class="cat-card-body">
-                    <div class="cat-badge-icon cat-badge-yellow">
-                      <i class="ri-film-line cat-icon-navy-theme"></i>
-                    </div>
-                    <span class="cat-card-name">Audio &amp; Video</span>
-                    <span class="cat-card-count">2,100+ Items</span>
-                    <div class="cat-card-cta">Explore Now <i class="ri-arrow-right-line"></i></div>
-                  </div>
-                </a>
-              </div>
-
-
-              <div class="swiper-slide">
-                <a href="#products" class="cat-card-new" id="catSoftware">
-                  <div class="cat-card-img cat-bg-purple">
-                    <img src="./assets/img/featured/software.jpg" alt="Software" />
-                  </div>
-                  <div class="cat-card-body">
-                    <div class="cat-badge-icon cat-badge-purple">
-                      <i class="ri-apps-line cat-icon-navy-theme"></i>
-                    </div>
-                    <span class="cat-card-name">Software &amp; Apps</span>
-                    <span class="cat-card-count">3,400+ Items</span>
-                    <div class="cat-card-cta">Explore Now <i class="ri-arrow-right-line"></i></div>
-                  </div>
-                </a>
-              </div>
-
-
-              <div class="swiper-slide">
-                <a href="#products" class="cat-card-new" id="catOffice">
-                  <div class="cat-card-img cat-bg-orange">
-                    <img src="./assets/img/featured/office.jpg" alt="Office" />
-                  </div>
-                  <div class="cat-card-body">
-                    <div class="cat-badge-icon cat-badge-orange">
-                      <i class="ri-pencil-ruler-2-line cat-icon-navy-theme"></i>
-                    </div>
-                    <span class="cat-card-name">Office &amp; Accessories</span>
-                    <span class="cat-card-count">5,600+ Items</span>
-                    <div class="cat-card-cta">Explore Now <i class="ri-arrow-right-line"></i></div>
-                  </div>
-                </a>
-              </div>
-
-
-              <div class="swiper-slide">
-                <a href="#products" class="cat-card-new" id="catPrinters">
-                  <div class="cat-card-img cat-bg-sky">
-                    <img src="./assets/img/featured/printer.jpg" alt="Printers &amp; Scanners" />
-                  </div>
-                  <div class="cat-card-body">
-                    <div class="cat-badge-icon cat-badge-sky">
-                      <i class="ri-printer-line cat-icon-navy-theme"></i>
-                    </div>
-                    <span class="cat-card-name">Printers &amp; Scanners</span>
-                    <span class="cat-card-count">920+ Items</span>
-                    <div class="cat-card-cta">Explore Now <i class="ri-arrow-right-line"></i></div>
-                  </div>
-                </a>
-              </div>
-
-
-              <div class="swiper-slide">
-                <a href="#products" class="cat-card-new" id="catStorage">
-                  <div class="cat-card-img cat-bg-magenta">
-                    <img src="./assets/img/featured/storage.jpg" alt="Storage &amp; Memory" />
-                  </div>
-                  <div class="cat-card-body">
-                    <div class="cat-badge-icon cat-badge-magenta">
-                      <i class="ri-hard-drive-2-line cat-icon-navy-theme"></i>
-                    </div>
-                    <span class="cat-card-name">Storage &amp; Memory</span>
-                    <span class="cat-card-count">1,450+ Items</span>
-                    <div class="cat-card-cta">Explore Now <i class="ri-arrow-right-line"></i></div>
-                  </div>
-                </a>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="cat-nav-btn cat-btn-prev" id="catPrevBtn" aria-label="Previous category">
-            <i class="ri-arrow-left-s-line"></i>
-          </div>
-          <div class="cat-nav-btn cat-btn-next" id="catNextBtn" aria-label="Next category">
-            <i class="ri-arrow-right-s-line"></i>
-          </div>
-        </div>
-
-        <!-- Mobile View All button -->
-        <div class="text-center mt-4 d-md-none">
-          <a href="#" class="btn cat-view-all-btn">View All Categories <i class="ri-arrow-right-line ms-1"></i></a>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="products" class="bg-white" aria-label="Product offers">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-end mb-5">
-          <div>
-            <span class="section-tag">Handpicked Selections</span>
-            <h2 class="section-title mb-0">Trending Products</h2>
-          </div>
-          <a href="#" class="btn btn-outline-primary btn-sm  d-inline-flex p-2">
-            View All <i class="ri-arrow-right-line ms-1"></i>
-          </a>
-        </div>
-
-
-        <div class="product-tabs">
-          <ul class="nav nav-tabs mb-4" id="productTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="tab-arrivals" data-bs-toggle="tab" data-bs-target="#arrivals"
-                type="button" role="tab" aria-controls="arrivals" aria-selected="true">
-                <i class="ri-shopping-bag-3-line me-1"></i> New Arrivals
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-bestsellers" data-bs-toggle="tab" data-bs-target="#bestsellers"
-                type="button" role="tab" aria-controls="bestsellers" aria-selected="false">
-                <i class="ri-star-fill me-1"></i> Best Sellers
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-trending" data-bs-toggle="tab" data-bs-target="#trending" type="button"
-                role="tab" aria-controls="trending" aria-selected="false">
-                <i class="ri-fire-fill me-1"></i> Trending
-              </button>
-            </li>
-          </ul>
-
-          <div class="tab-content" id="productTabContent">
-
-
-            <div class="tab-pane fade show active" id="arrivals" role="tabpanel" aria-labelledby="tab-arrivals">
-              <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodArrivals1">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-danger text-white">NEW</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Electronics</p>
-                      <h3 class="product-name">Wireless ANC Headphones Pro</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span class="rating-count">(248)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹4,999</span>
-                        <span class="price-discount">50% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-arr1">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodArrivals2">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-success text-white">HOT</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Electronics</p>
-                      <h3 class="product-name">Smart Fitness Watch with GPS</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span class="rating-count">(182)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹3,999</span>
-                        <span class="price-original">₹6,499</span>
-                        <span class="price-discount">38% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-arr2">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodArrivals3">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-warning text-dark">SALE</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Fashion</p>
-                      <h3 class="product-name">Air Run Ultra Sport Sneakers</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span class="rating-count">(95)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹1,799</span>
-                        <span class="price-original">₹2,999</span>
-                        <span class="price-discount">40% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-arr3">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodArrivals4">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-info text-white">NEW</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Fashion</p>
-                      <h3 class="product-name">Premium Slim Fit Cotton Jacket</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                        <span class="rating-count">(67)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹1,299</span>
-                        <span class="price-original">₹2,499</span>
-                        <span class="price-discount">48% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-arr4">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-
-            <div class="tab-pane fade" id="bestsellers" role="tabpanel" aria-labelledby="tab-bestsellers">
-              <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodBest1">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-warning text-dark">#1 PICK</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Home &amp; Living</p>
-                      <h3 class="product-name">Espresso Coffee Maker 15-Bar</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span class="rating-count">(1,247)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹4,299</span>
-                        <span class="price-original">₹6,000</span>
-                        <span class="price-discount">28% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-best1">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodBest2">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-success text-white">TOP RATED</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Sports</p>
-                      <h3 class="product-name">Non-Slip Eco Yoga Mat 6mm</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span class="rating-count">(643)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹899</span>
-                        <span class="price-original">₹1,499</span>
-                        <span class="price-discount">40% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-best2">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodBest3">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-primary text-white">BESTSELLER</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Electronics</p>
-                      <h3 class="product-name">Portable Bluetooth Speaker 360°</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span class="rating-count">(892)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹2,199</span>
-                        <span class="price-original">₹3,500</span>
-                        <span class="price-discount">37% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-best3">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodBest4">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-danger text-white">HOT</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Beauty</p>
-                      <h3 class="product-name">Luxury Skincare Ritual Kit</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                        <span class="rating-count">(431)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹1,599</span>
-                        <span class="price-original">₹2,800</span>
-                        <span class="price-discount">43% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-best4">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-
-            <div class="tab-pane fade" id="trending" role="tabpanel" aria-labelledby="tab-trending">
-              <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodTrend1">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-danger text-white">TRENDING</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Electronics</p>
-                      <h3 class="product-name">RGB Gaming Mouse 16000 DPI</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span class="rating-count">(523)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹1,299</span>
-                        <span class="price-original">₹2,200</span>
-                        <span class="price-discount">41% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-trend1">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodTrend2">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-warning text-dark">VIRAL</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Fashion</p>
-                      <h3 class="product-name">Classic Stretch Denim Jeans</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                        <span class="rating-count">(287)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹1,099</span>
-                        <span class="price-original">₹1,999</span>
-                        <span class="price-discount">45% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-trend2">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodTrend3">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-success text-white">TRENDING</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Home &amp; Living</p>
-                      <h3 class="product-name">Digital Air Fryer 5.5L</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span class="rating-count">(712)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹3,499</span>
-                        <span class="price-original">₹5,500</span>
-                        <span class="price-discount">36% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-trend3">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="product-card card h-100" id="prodTrend4">
-                    <div class="product-img-wrap">
-                      <img src="https://placehold.co/304x185" alt="Product Placeholder" class="img-fluid w-100 h-100">
-                      <span class="product-badge bg-info text-white">TOP PICK</span>
-                      <button class="wishlist-btn" aria-label="Add to wishlist">
-                        <i class="ri-heart-line"></i>
-                      </button>
-                    </div>
-                    <div class="card-body p-3">
-                      <p class="product-category">Beauty</p>
-                      <h3 class="product-name">Vitamin C Face Serum 30ml</h3>
-                      <div class="rating-row">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                        <span class="rating-count">(394)</span>
-                      </div>
-                      <div class="price-row">
-                        <span class="price-current">₹699</span>
-                        <span class="price-original">₹1,200</span>
-                        <span class="price-discount">42% OFF</span>
-                      </div>
-                      <button class="btn btn-primary add-to-cart-btn" id="cart-trend4">
-                        <i class="ri-shopping-cart-2-line"></i> Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
             </div>
 
           </div>
@@ -2294,586 +1460,153 @@
       </div>
     </section>
 
-    <section id="deals" class="deals-section  " aria-label="Deals of the day">
-      <div class="container">
-
-        <div
-          class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-lg-5 mb-4 gap-3">
-          <div>
-            <span class="section-tag">Limited Time Offers</span>
-            <h2 class="section-title mb-0">Deals of the Day</h2>
-          </div>
-          <div>
-            <p class="text-white-50 small mb-2">Offer expires in:</p>
-            <div class="countdown-block" id="dealCountdown" aria-live="polite" aria-label="Countdown timer">
-              <div class="countdown-unit">
-                <span class="countdown-val" id="cdHours">08</span>
-                <span class="countdown-lbl">Hours</span>
-              </div>
-              <span class="countdown-sep">:</span>
-              <div class="countdown-unit">
-                <span class="countdown-val" id="cdMinutes">45</span>
-                <span class="countdown-lbl">Mins</span>
-              </div>
-              <span class="countdown-sep">:</span>
-              <div class="countdown-unit">
-                <span class="countdown-val" id="cdSeconds">30</span>
-                <span class="countdown-lbl">Secs</span>
-              </div>
-            </div>
-          </div>
+    <!-- Mission & Core Values Section -->
+    <section class="py-5 bg-light" id="mission">
+      <div class="container py-lg-4">
+        <div class="text-center max-width-700 mx-auto mb-5">
+          <span class="section-tag ">Our Purpose</span>
+          <h2 class="fw-bold section-title text-navy">Engineering Systems That Scale with Confidence</h2>
+          <p class="text-muted fs-6 about-purpose-desc">
+            We transform complex technical challenges into reliable, high-performance solutions. At TNI, every
+            partnership is built on clarity, every hardware system is selected with precision, and every product is
+            backed by direct manufacturer authenticity.
+          </p>
         </div>
 
-        <div class="row g-4 row-cols-1 row-cols-md-3">
-
-          <div class="col">
-            <div class="deal-card h-100 " id="deal1">
-              <div class="deal-img-wrap">
-                <img src="https://placehold.co/414x190/" alt="Deal Placeholder" class="img-fluid w-100 h-100">
-                <span class="deal-off-badge">49% OFF</span>
+        <div class="row g-4">
+          <!-- Pillar 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm p-4 text-center text-md-start bg-white about-card-hover">
+              <div class="about-icon-square mb-3">
+                <i class="ri-cpu-line"></i>
               </div>
-              <div class="deal-body">
-                <p class="deal-cat">Electronics</p>
-                <h3 class="deal-name">55" 4K Ultra HD Smart LED TV</h3>
-                <div class="deal-prices">
-                  <span class="deal-price-now">₹32,999</span>
-                  <span class="deal-price-was">₹64,999</span>
-                </div>
-                <div class="sold-label">
-                  <span>72% claimed</span>
-                  <span>Only 28 left!</span>
-                </div>
-                <div class="deal-progress">
-                  <div class="deal-progress-bar deal-progress-72"></div>
-                </div>
-                <button class="btn btn-secondary btn-sm w-100 mt-3 fw-semibold p-2" id="cart-deal1">
-                  Grab Deal <i class="ri-arrow-right-line ms-1"></i>
-                </button>
-              </div>
+              <h5 class="fw-bold text-navy mb-2">Scalable Systems</h5>
+              <p class="text-muted small mb-0">
+                Enterprise desktops, servers, workstations, and high-density storage engineered for maximum uptime and
+                seamless growth.
+              </p>
             </div>
           </div>
 
-          <div class="col">
-            <div class="deal-card h-100" id="deal2">
-              <div class="deal-img-wrap">
-                <img src="https://placehold.co/414x190/" alt="Deal Placeholder" class="img-fluid w-100 h-100">
-                <span class="deal-off-badge">49% OFF</span>
+          <!-- Pillar 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm p-4 text-center text-md-start bg-white about-card-hover">
+              <div class="about-icon-square mb-3">
+                <i class="ri-shield-check-line"></i>
               </div>
-              <div class="deal-body">
-                <p class="deal-cat">Fashion</p>
-                <h3 class="deal-name">Air Max Pro Breathable Running Shoes</h3>
-                <div class="deal-prices">
-                  <span class="deal-price-now">₹2,799</span>
-                  <span class="deal-price-was">₹5,499</span>
-                </div>
-                <div class="sold-label">
-                  <span>55% claimed</span>
-                  <span>Only 45 left!</span>
-                </div>
-                <div class="deal-progress">
-                  <div class="deal-progress-bar deal-progress-55"></div>
-                </div>
-                <button class="btn btn-secondary btn-sm w-100 mt-3 fw-semibold p-2" id="cart-deal2">
-                  Grab Deal <i class="ri-arrow-right-line ms-1"></i>
-                </button>
-              </div>
+              <h5 class="fw-bold text-navy mb-2">100% Genuine</h5>
+              <p class="text-muted small mb-0">
+                Direct partnerships with certified global brands ensure authentic hardware, original consumables, and
+                transparent warranties.
+              </p>
             </div>
           </div>
 
-          <div class="col">
-            <div class="deal-card h-100" id="deal3">
-              <div class="deal-img-wrap">
-                <img src="https://placehold.co/414x190/" alt="Deal Placeholder" class="img-fluid w-100 h-100">
-                <span class="deal-off-badge">56% OFF</span>
+          <!-- Pillar 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm p-4 text-center text-md-start bg-white about-card-hover">
+              <div class="about-icon-square mb-3">
+                <i class="ri-router-line"></i>
               </div>
-              <div class="deal-body">
-                <p class="deal-cat">Beauty</p>
-                <h3 class="deal-name">Complete Skincare Essentials Kit</h3>
-                <div class="deal-prices">
-                  <span class="deal-price-now">₹1,999</span>
-                  <span class="deal-price-was">₹4,500</span>
-                </div>
-                <div class="sold-label">
-                  <span>38% claimed</span>
-                  <span>Limited stock!</span>
-                </div>
-                <div class="deal-progress">
-                  <div class="deal-progress-bar deal-progress-38"></div>
-                </div>
-                <button class="btn btn-secondary btn-sm w-100 mt-3 fw-semibold p-2" id="cart-deal3">
-                  Grab Deal <i class="ri-arrow-right-line ms-1"></i>
-                </button>
-              </div>
+              <h5 class="fw-bold text-navy mb-2">Enterprise Security</h5>
+              <p class="text-muted small mb-0">
+                From fiber networking to network security appliances and VoIP infrastructure, we equip organizations
+                with zero-trust protection.
+              </p>
             </div>
           </div>
 
+          <!-- Pillar 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm p-4 text-center text-md-start bg-white about-card-hover">
+              <div class="about-icon-square mb-3">
+                <i class="ri-customer-service-2-line"></i>
+              </div>
+              <h5 class="fw-bold text-navy mb-2">Human Expertise</h5>
+              <p class="text-muted small mb-0">
+                A dedicated team of technical specialists and engineers who provide real-world advice, fast dispatch,
+                and dependable support.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="content-blocks" class="bg-white " aria-label="Content and marketing">
-      <div class="container">
-
-        <!-- Our Story Section -->
-        <div class="story-section py-3 py-md-4 mb-5">
-          <div class="row align-items-center g-4 g-lg-5">
-            <div class="col-lg-6">
-              <div class="story-image-box position-relative overflow-hidden shadow-sm" style="border-radius: 0.7rem;">
-                <img src="./assets/img/8.jpg" alt="TNI Enterprise Technology" class="img-fluid w-100"
-                  style="object-fit: cover; max-height: 380px; border-radius: 0.7rem;" />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="ps-lg-3">
-                <span class="d-inline-block text-uppercase fw-bold mb-2"
-                  style="color: #ff6b00; letter-spacing: 0.08em; font-size: 0.8rem;">OUR STORY</span>
-                <h2 class="fw-bold section-title text-navy mb-3">
-                  Built on Trust. Driven by Real Support.
-                </h2>
-                <p class="text-dark fw-semibold lead fs-6 mb-3" style="line-height: 1.6;">
-                  We started TNI with a simple goal: to make sourcing authentic tech hardware transparent, honest, and
-                  straightforward.
-                </p>
-                <p class="text-muted mb-4" style="line-height: 1.7; font-size: 0.95rem;">
-                  Whether you're setting up a home studio, upgrading an enterprise network, or replacing an essential
-                  printer cartridge, finding genuine products shouldn't be a guessing game. Every item we stock is
-                  sourced directly from certified brand partners, backed by real human advice whenever you need a hand.
-                </p>
-
-                <div class="row g-3 pt-3 border-top">
-                  <div class="col-4">
-                    <div class="fw-bold fs-5 fs-md-4" style="color: #203874 !important;">150,000+</div>
-                    <div class="small text-muted" style="font-size: 0.75rem; line-height: 1.25;">Genuine Products</div>
-                  </div>
-                  <div class="col-4">
-                    <div class="fw-bold fs-5 fs-md-4" style="color: #203874 !important;">99.8%</div>
-                    <div class="small text-muted" style="font-size: 0.75rem; line-height: 1.25;">On-Time Shipping</div>
-                  </div>
-                  <div class="col-4">
-                    <div class="fw-bold fs-5 fs-md-4" style="color: #203874 !important;">Direct</div>
-                    <div class="small text-muted" style="font-size: 0.75rem; line-height: 1.25;">Certified Support</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-between align-items-center mb-5 pt-5">
-          <div>
-            <span class="section-tag">Store Blog</span>
-            <h2 class="section-title mb-0 d-none d-md-block">Tips, Guides &amp; Insights</h2>
-            <h2 class="section-title mb-0 d-md-none d-block">Tips, Guides &amp; <br> Insights</h2>
-          </div>
-          <a href="/blogs" class="btn btn-outline-primary btn-sm  d-inline-flex p-2">
-            View All Blogs <i class="ri-arrow-right-line ms-1"></i>
-          </a>
-        </div>
-
-        <div class="row g-4 row-cols-1 row-cols-md-3">
-
-          <div class="col-lg-4">
-            <article class="blog-card card h-100" id="blog1">
-              <div class="blog-img-wrap">
-                <img src="https://placehold.co/414x170/" alt="Placeholder" class="img-fluid w-100 h-100">
-              </div>
-              <div class="card-body p-4">
-                <span class="blog-tag">Technology</span>
-                <h3 class="blog-title mt-2">Top 10 Smart Tech Gadgets You Need This Year</h3>
-                <p class="blog-meta mb-3">
-                  <i class="ri-calendar-line me-1"></i> July 28, 2026 &nbsp;·&nbsp; 5 min read
-                </p>
-                <a href="#" class="blog-read-more" id="blogLink1">
-                  Read Article <i class="ri-arrow-right-line ms-1"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4">
-            <article class="blog-card card h-100" id="blog2">
-              <div class="blog-img-wrap">
-                <img src="https://placehold.co/414x170/" alt="Blog Placeholder" class="img-fluid w-100 h-100">
-              </div>
-              <div class="card-body p-4">
-                <span class="blog-tag">Fashion</span>
-                <h3 class="blog-title mt-2">Summer Style Guide: Essential Wardrobe Upgrades</h3>
-                <p class="blog-meta mb-3">
-                  <i class="ri-calendar-line me-1"></i> July 25, 2026 &nbsp;·&nbsp; 4 min read
-                </p>
-                <a href="#" class="blog-read-more" id="blogLink2">
-                  Read Article <i class="ri-arrow-right-line ms-1"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4">
-            <article class="blog-card card h-100" id="blog3">
-              <div class="blog-img-wrap">
-                <img src="https://placehold.co/414x170/" alt="Blog Placeholder" class="img-fluid w-100 h-100">
-              </div>
-              <div class="card-body p-4">
-                <span class="blog-tag">Lifestyle</span>
-                <h3 class="blog-title mt-2">Building Your Ideal Home Gym Setup on a Budget</h3>
-                <p class="blog-meta mb-3">
-                  <i class="ri-calendar-line me-1"></i> July 20, 2026 &nbsp;·&nbsp; 6 min read
-                </p>
-                <a href="#" class="blog-read-more" id="blogLink3">
-                  Read Article <i class="ri-arrow-right-line ms-1"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Story Section -->
-    <!-- <section id="about" class="about-story-section py-5 bg-white position-relative">
+    <!-- Story Split Section -->
+    <section class="py-5 bg-white">
       <div class="container py-lg-4">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
-            <div class="story-image-stack position-relative">
-              <div class="story-img-main rounded-4 overflow-hidden shadow">
-                <img src="./assets/img/7.jpeg" alt="TNI Professionals Team" class="img-fluid w-100"
-                  style="object-fit: cover; max-height: 400px;" />
-              </div>
+            <div class="about-story-img-wrap shadow">
+              <img src="./assets/img/about2.jpg" alt="TNI Team Collaboration" class="img-fluid w-100 about-story-img" />
             </div>
           </div>
           <div class="col-lg-6">
             <div class="ps-lg-3">
-              <span class="section-tag mb-2">Our Story</span>
-              <h2 class="section-title fw-bold text-navy mb-3">
-                Built on Trust. Driven by Real Support.
+              <span class="section-tag">Who We Are</span>
+              <h2 class="fw-bold section-title text-navy mb-3">
+                A Culture of Clarity, Innovation &amp; Measurable Impact
               </h2>
-              <p class="text-secondary lead fs-6 mb-3">
-                We started TNI with a simple goal: to make sourcing authentic tech hardware transparent, honest, and
-                straightforward.
+              <p class="text-dark lead fs-6 mb-3 about-story-lead">
+                Founded with a vision to redefine technology procurement through a human and reliable lens, TNI has
+                grown into a trusted ecosystem for enterprise buyers, IT managers, and everyday creators.
               </p>
-              <p class="text-muted mb-4" style="line-height: 1.7;">
-                Whether you’re setting up a home studio, upgrading an entire enterprise network, or replacing an
-                essential printer cartridge, finding genuine products shouldn’t be a guessing game. Every item we stock
-                is sourced directly from certified brand partners, backed by real human advice whenever you need a hand.
+              <p class="text-muted mb-4 about-story-text">
+                We understand that every business environment is unique. Whether you are building high-availability
+                server racks, setting up modern office displays, or streamlining daily printing needs, our goal is to
+                deliver authentic products, clear guidance, and long-term value.
               </p>
-              <div class="d-flex flex-wrap gap-4 pt-3 border-top">
-                <div>
-                  <h4 class="fw-bold text-navy mb-0">150,000+</h4>
-                  <span class="small text-muted">Genuine Products</span>
-                </div>
-                <div class="vr d-none d-sm-block"></div>
-                <div>
-                  <h4 class="fw-bold text-navy mb-0">99.8%</h4>
-                  <span class="small text-muted">On-Time Shipping</span>
-                </div>
-                <div class="vr d-none d-sm-block"></div>
-                <div>
-                  <h4 class="fw-bold text-navy mb-0">Direct</h4>
-                  <span class="small text-muted">Certified Support</span>
-                </div>
+              <div class="about-quote-box">
+                <p class="mb-0 fw-semibold text-navy">
+                  "Every system we supply, every line of hardware we verify, and every customer interaction is guided by
+                  one standard: uncompromised quality and long-term reliability."
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
-
-    <section id="trust" class="bg-light position-relative overflow-hidden trust-section-bg"
-      aria-label="Customer reviews and trust signals">
-
-
-      <i class="ri-double-quotes-l position-absolute d-none d-lg-block huge-quote-bg huge-quote-left"></i>
-      <i class="ri-double-quotes-r position-absolute d-none d-lg-block huge-quote-bg huge-quote-right"></i>
-
-      <div class="container position-relative z-1 pt-4">
-
-
-        <div class="text-center mb-5 pb-3">
-          <span class="d-block fw-bold text-uppercase mb-2 testi-tag">Customer Testimonials</span>
-          <h2 class="fw-bold section-title mb-3 testi-title">Trusted by Over 2 Million Shoppers</h2>
-          <div class="mt-3">
-            <div class="stars-display d-flex justify-content-center gap-1 mb-2 testi-stars">
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-            </div>
-            <div class="fs-6 mt-2">
-              <span class="fw-bold testi-score">4.9 / 5</span>
-              <span class="text-muted ms-1 testi-count">(210,000+ Verified Reviews)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonials-swiper-container position-relative mb-lg-5 mb-3 px-md-4">
-          <div class="swiper testimonials-swiper">
-            <div class="swiper-wrapper py-3">
-
-              <!-- Testimonial 1 -->
-              <div class="swiper-slide">
-                <div class="review-card" id="review1">
-                  <div class="verified-badge">
-                    <i class="ri-checkbox-circle-fill me-1"></i> VERIFIED BUYER
-                  </div>
-                  <div class="quote-icon-top">
-                    <i class="ri-double-quotes-l"></i>
-                  </div>
-                  <div class="quote-icon-bg">
-                    <i class="ri-double-quotes-r"></i>
-                  </div>
-                  <p class="review-quote">
-                    Ordering enterprise servers from TNI was completely effortless. Express dispatch, pristine
-                    packaging, and top-tier performance. Will definitely order again.
-                  </p>
-                  <div class="review-stars">
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                  </div>
-                  <div class="d-flex align-items-center gap-3 mt-4">
-                    <div class="reviewer-avatar avatar-blue">S</div>
-                    <div>
-                      <div class="reviewer-name">Sarah Jenkins</div>
-                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>New York, USA</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonial 2 -->
-              <div class="swiper-slide">
-                <div class="review-card" id="review2">
-                  <div class="verified-badge">
-                    <i class="ri-checkbox-circle-fill me-1"></i> VERIFIED BUYER
-                  </div>
-                  <div class="quote-icon-top">
-                    <i class="ri-double-quotes-l"></i>
-                  </div>
-                  <div class="quote-icon-bg">
-                    <i class="ri-double-quotes-r"></i>
-                  </div>
-                  <p class="review-quote">
-                    100% authentic products and competitive pricing. Their technical support team resolved my query
-                    within minutes. Highly recommended technology partner!
-                  </p>
-                  <div class="review-stars">
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                  </div>
-                  <div class="d-flex align-items-center gap-3 mt-4">
-                    <div class="reviewer-avatar avatar-orange">D</div>
-                    <div>
-                      <div class="reviewer-name">David Miller</div>
-                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>London, UK</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonial 3 -->
-              <div class="swiper-slide">
-                <div class="review-card" id="review3">
-                  <div class="verified-badge">
-                    <i class="ri-checkbox-circle-fill me-1"></i> VERIFIED BUYER
-                  </div>
-                  <div class="quote-icon-top">
-                    <i class="ri-double-quotes-l"></i>
-                  </div>
-                  <div class="quote-icon-bg">
-                    <i class="ri-double-quotes-r"></i>
-                  </div>
-                  <p class="review-quote">
-                    The hardware deals section is fantastic. Got a high-spec workstation at an unbeatable discount.
-                    Prompt international shipping and seamless experience!
-                  </p>
-                  <div class="review-stars">
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                  </div>
-                  <div class="d-flex align-items-center gap-3 mt-4">
-                    <div class="reviewer-avatar avatar-green">A</div>
-                    <div>
-                      <div class="reviewer-name">Alexandre Dubois</div>
-                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>Toronto, Canada</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonial 4 -->
-              <div class="swiper-slide">
-                <div class="review-card" id="review4">
-                  <div class="verified-badge">
-                    <i class="ri-checkbox-circle-fill me-1"></i> VERIFIED BUYER
-                  </div>
-                  <div class="quote-icon-top">
-                    <i class="ri-double-quotes-l"></i>
-                  </div>
-                  <div class="quote-icon-bg">
-                    <i class="ri-double-quotes-r"></i>
-                  </div>
-                  <p class="review-quote">
-                    Great selection of networking equipment and optical gear. The build quality exceeded my expectations
-                    and the checkout process was super smooth.
-                  </p>
-                  <div class="review-stars">
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-half-fill"></i>
-                  </div>
-                  <div class="d-flex align-items-center gap-3 mt-4">
-                    <div class="reviewer-avatar avatar-purple">M</div>
-                    <div>
-                      <div class="reviewer-name">Marcus Vance</div>
-                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>Sydney, Australia</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonial 5 -->
-              <div class="swiper-slide">
-                <div class="review-card" id="review5">
-                  <div class="verified-badge">
-                    <i class="ri-checkbox-circle-fill me-1"></i> VERIFIED BUYER
-                  </div>
-                  <div class="quote-icon-top">
-                    <i class="ri-double-quotes-l"></i>
-                  </div>
-                  <div class="quote-icon-bg">
-                    <i class="ri-double-quotes-r"></i>
-                  </div>
-                  <p class="review-quote">
-                    Sourced a complete batch of laser printers and original cartridges for our corporate office.
-                    Outstanding reliability, fast dispatch, and excellent care.
-                  </p>
-                  <div class="review-stars">
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                  </div>
-                  <div class="d-flex align-items-center gap-3 mt-4">
-                    <div class="reviewer-avatar avatar-pink">E</div>
-                    <div>
-                      <div class="reviewer-name">Elena Rostova</div>
-                      <div class="reviewer-loc"><i class="ri-map-pin-line me-1"></i>Frankfurt, Germany</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="testimonial-nav-btn testimonial-btn-prev" id="testiPrevBtn" aria-label="Previous testimonial">
-            <i class="ri-arrow-left-s-line"></i>
-          </div>
-          <div class="testimonial-nav-btn testimonial-btn-next" id="testiNextBtn" aria-label="Next testimonial">
-            <i class="ri-arrow-right-s-line"></i>
-          </div>
-        </div>
-
-
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div
-              class="trust-badges-container bg-white rounded-3 mt-4 py-4 px-3 px-md-4 d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between text-center text-lg-start gap-4 gap-lg-0">
-
-              <div class="trust-badge-item d-flex flex-column flex-lg-row align-items-center gap-3">
-                <div class="trust-icon-wrap rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="ri-shield-check-line fs-3"></i>
-                </div>
-                <div>
-                  <div class="trust-title fw-bold text-navy mb-1">Secure Checkout</div>
-                  <p class="trust-desc text-muted small mb-0">100% safe &amp; secure</p>
-                </div>
-              </div>
-
-              <div class="trust-divider d-none d-lg-block"></div>
-
-              <div class="trust-badge-item d-flex flex-column flex-lg-row align-items-center gap-3">
-                <div class="trust-icon-wrap rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="ri-archive-line fs-3"></i>
-                </div>
-                <div>
-                  <div class="trust-title fw-bold text-navy mb-1">20-Day Returns</div>
-                  <p class="trust-desc text-muted small mb-0">Hassle-free returns</p>
-                </div>
-              </div>
-
-              <div class="trust-divider d-none d-lg-block"></div>
-
-              <div class="trust-badge-item d-flex flex-column flex-lg-row align-items-center gap-3">
-                <div class="trust-icon-wrap rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="ri-truck-line fs-3"></i>
-                </div>
-                <div>
-                  <div class="trust-title fw-bold text-navy mb-1">Fast Delivery</div>
-                  <p class="trust-desc text-muted small mb-0">On time, every time</p>
-                </div>
-              </div>
-
-              <div class="trust-divider d-none d-lg-block"></div>
-
-              <div class="trust-badge-item d-flex flex-column flex-lg-row align-items-center gap-3">
-                <div class="trust-icon-wrap rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="ri-customer-service-2-line fs-3"></i>
-                </div>
-                <div>
-                  <div class="trust-title fw-bold text-navy mb-1">24/7 Support</div>
-                  <p class="trust-desc text-muted small mb-0">Dedicated support</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
-
-    <section id="newsletter" class="newsletter-section py-5" aria-label="Newsletter signup">
-      <div class="container text-center">
-        <span class="section-tag section-tag-light">Stay Updated</span>
-        <h2 class="mb-2 mt-1 section-title">Subscribe for Exclusive Deals</h2>
-        <p class="mb-4">
-          Receive special offers, new arrival alerts, and subscriber-only discounts<br class="d-none d-md-block" />
-          directly in your inbox.
-        </p>
-        <form class="newsletter-form" id="newsletterForm" novalidate>
-          <input type="email" id="newsletterEmail" placeholder="Enter your email address…"
-            aria-label="Email address for newsletter" required />
-          <button type="submit" id="newsletterBtn">
-            Subscribe <i class="ri-send-plane-fill ms-1"></i>
-          </button>
-        </form>
-        <p class="newsletter-privacy">
-          <i class="ri-lock-line me-1"></i> We respect your privacy. Unsubscribe at any time.
-        </p>
+    <!-- Stats & Trust Section -->
+    <section class="py-5 text-white bg-primary">
+      <div class="container text-center py-md-3">
+        <h3 class="fw-bold mb-4 text-white">Delivering Excellence Across Every Category</h3>
+        <div class="row g-3 g-md-4 justify-content-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-card-box">
+              <div class="stat-number">150,000+</div>
+              <div class="stat-label">Catalog Products</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-card-box">
+              <div class="stat-number">57,000+</div>
+              <div class="stat-label">Networking &amp; Security Items</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-card-box">
+              <div class="stat-number">99.8%</div>
+              <div class="stat-label">On-Time Express Dispatch</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-card-box">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Human Customer Support</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
   </main>
 
+  <!-- Site Footer -->
   <footer class="site-footer py-5" id="footer" aria-label="Site footer">
     <div class="container">
       <div class="row g-5">
-
         <div class="col-lg-3 col-md-6">
           <a href="index.html" class="brand-logo-wrap d-inline-block mb-3" aria-label="TNI Professionals home">
             <div class="brand-logo-card">
@@ -2881,7 +1614,8 @@
             </div>
           </a>
           <p class="footer-about-text">
-            Your trusted online destination for quality electronics, fashion, home essentials, and more.
+            Your strategic online destination for genuine hardware, networking equipment, office essentials, and
+            enterprise IT solutions.
           </p>
           <div class="social-icons mt-3">
             <a href="#" aria-label="Follow TNI on Twitter"><i class="ri-twitter-x-line"></i></a>
@@ -2895,12 +1629,11 @@
           <h6 class="footer-col-title">Company</h6>
           <ul class="footer-link-list">
             <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Why TNI ?</a></li>
+            <li><a href="index.html#why-tni">Why TNI ?</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Our Blog</a></li>
           </ul>
         </div>
-
 
         <div class="col-lg-2 col-md-3 col-6">
           <h6 class="footer-col-title">Support</h6>
@@ -2912,79 +1645,39 @@
           </ul>
         </div>
 
-
         <div class="col-lg-2 col-md-6 col-6">
           <h6 class="footer-col-title">Categories</h6>
-          <ul class="footer-link-list" id="footerCatList">
-            <li><a href="#categories">Systems</a></li>
-            <li><a href="#categories">Displays &amp; Projectors</a></li>
-            <li><a href="#categories">Printers &amp; Scanners</a></li>
-            <!-- More categories hidden by default -->
-            <li class="footer-more-cats d-none"><a href="#categories">Storage &amp; Memory</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Networking</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Components &amp; Accessories</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Hardware Service &amp; Support</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Communication</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Navigation</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Audio &amp; Video</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Cameras &amp; Camcorders</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Photo Equipment</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Optical Equipment</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Kitchen Appliances</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Home Appliances</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Office Machines</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Hardware &amp; Tools</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Security &amp; Home Automation</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Power, Garden &amp; Hand Tools</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Electrical Supplies</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Applications</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Operating Systems</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Games</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Software Service &amp; Support</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Health &amp; Beauty</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Filing &amp; Archive</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Desk Accessories</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Paper Products</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Mailroom &amp; Shipping</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Meeting &amp; Presentation</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Facility Supplies</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Vision Care</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Office Furnishing &amp; Accessories</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Pet Supplies</a></li>
-            <li class="footer-more-cats d-none"><a href="#categories">Additional Products</a></li>
-            <li>
-              <button class="footer-more-btn" id="footerMoreCatsBtn" onclick="toggleFooterCats()">
-                <i class="ri-add-line me-1"></i>More Categories
-              </button>
-            </li>
+          <ul class="footer-link-list">
+            <li><a href="index.html#products">Systems</a></li>
+            <li><a href="index.html#products">Displays &amp; Projectors</a></li>
+            <li><a href="index.html#products">Printers &amp; Scanners</a></li>
+            <li><a href="index.html#products">Storage &amp; Memory</a></li>
+            <li><a href="index.html#products">Networking</a></li>
           </ul>
         </div>
-
 
         <div class="col-lg-3 col-md-6 col-12 col-sm-6">
           <h6 class="footer-col-title">Contact Us</h6>
           <ul class="footer-link-list">
             <li>
-              <a href="mailto: sufyan@tniprofessionals.com">
+              <a href="mailto:sufyan@tniprofessionals.com">
                 <i class="ri-mail-line mt-1"></i> sufyan@tniprofessionals.com
               </a>
             </li>
             <li>
-              <a href="tel:+911800123456">
+              <a href="tel:+917736645145">
                 <i class="ri-phone-line mt-1"></i> 7736645145
               </a>
             </li>
-
           </ul>
         </div>
-
       </div>
 
       <hr class="mt-4" />
 
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 pb-2">
         <p class="footer-bottom-text mb-0">
-          © <span id="year"></span> TNI Store. All rights reserved.
+          © <span id="year">2026</span> TNI Store. All rights reserved.
         </p>
         <div class="payment-badges">
           <span class="pay-badge">VISA</span>
@@ -2994,14 +1687,11 @@
           <span class="pay-badge">COD</span>
         </div>
       </div>
-
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script src="./js/app.js"></script>
 </body>
 

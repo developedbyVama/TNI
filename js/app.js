@@ -127,6 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const toggle = navItem.querySelector('[data-bs-toggle="dropdown"]');
       if (toggle) {
         toggle.setAttribute('aria-expanded', 'false');
+        toggle.classList.remove('show');
+        toggle.blur();
       }
     });
   });

@@ -133,20 +133,32 @@ header {
 }
 
 .secondary-navbar {
-  // text-align: center;
   padding: 0.75rem 0rem;
   background: $navy;
-
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 
-  .nav-link {
+  .secondary-nav-list>.nav-item>.nav-link {
     font-size: 0.95rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.9) !important;
     transition: color 0.2s ease;
 
-    &:hover {
+    &:hover,
+    &:focus:hover {
       color: $orange !important;
+    }
+
+    &:focus:not(:hover):not(.active),
+    &:active:not(:hover):not(.active),
+    &.show:not(:hover):not(.active) {
+      color: rgba(255, 255, 255, 0.9) !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    &.active {
+      color: $orange !important;
+      font-weight: 700 !important;
     }
   }
 
@@ -167,6 +179,14 @@ header {
   @media (min-width: 992px) {
     .dropdown-hover {
       position: relative;
+
+      &:hover>.nav-link {
+        color: $orange !important;
+      }
+
+      &:not(:hover)>.nav-link:not(.active) {
+        color: rgba(255, 255, 255, 0.9) !important;
+      }
 
       &:hover>.dropdown-menu,
       &:hover>.cat-mega-dropdown,
@@ -2814,6 +2834,7 @@ body {
 
 // Bootstrap Active Navigation Link Custom Styling
 .secondary-nav-list {
+
   .nav-link.active,
   .nav-link:focus.active {
     color: $orange !important;
@@ -2822,6 +2843,7 @@ body {
 }
 
 .mobile-offcanvas {
+
   .nav-link.active,
   a.active {
     color: $orange !important;
@@ -2859,12 +2881,15 @@ body {
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
 
-    h1, .display-4, .display-5 {
+    h1,
+    .display-4,
+    .display-5 {
       font-size: 1.85rem !important;
       line-height: 1.3 !important;
     }
 
-    .lead, .about-hero-lead {
+    .lead,
+    .about-hero-lead {
       font-size: 0.98rem !important;
       line-height: 1.65 !important;
     }
@@ -2942,7 +2967,8 @@ body {
     text-align: left !important;
     padding: 1.25rem !important;
 
-    .icon-square, .about-icon-square {
+    .icon-square,
+    .about-icon-square {
       margin-left: 0 !important;
       margin-right: auto !important;
     }

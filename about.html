@@ -941,43 +941,193 @@
               </div>
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover">
+          <!-- Software Mega Dropdown -->
+          <li class="nav-item dropdown dropdown-hover position-static">
             <a class="nav-link dropdown-toggle px-0 py-0" href="#" id="softwareDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Software
             </a>
-            <div class="cat-dropdown-menu shadow-sm rounded-3 mt-0 border-0" aria-labelledby="softwareDropdown">
-              <ul class="cat-scroll-list">
-                <li><a href="#categories"><i class="ri-apps-line"></i><span>Applications</span></a></li>
-                <li><a href="#categories"><i class="ri-windows-line"></i><span>Operating Systems</span></a></li>
-                <li><a href="#categories"><i class="ri-gamepad-line"></i><span>Games</span></a></li>
-                <li><a href="#categories"><i class="ri-customer-service-2-line"></i><span>Software Service &amp;
-                      Support</span></a></li>
-              </ul>
+            <div class="cat-mega-dropdown dropdown-menu shadow-lg border-0" aria-labelledby="softwareDropdown">
+              <div class="mega-menu-wrapper">
+                <!-- Left Sidebar Navigation Tabs -->
+                <div class="mega-menu-sidebar">
+                  <div class="nav flex-column nav-pills" id="v-pills-sw-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-sw-apps-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-sw-apps" type="button" role="tab" aria-controls="v-pills-sw-apps"
+                      aria-selected="true">
+                      <span class="cat-item-info">
+                        <i class="ri-apps-line"></i>
+                        <span>Applications</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-sw-os-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-sw-os" type="button" role="tab" aria-controls="v-pills-sw-os"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-windows-line"></i>
+                        <span>Operating Systems</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-sw-games-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-sw-games" type="button" role="tab" aria-controls="v-pills-sw-games"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-gamepad-line"></i>
+                        <span>Games</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-sw-support-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-sw-support" type="button" role="tab" aria-controls="v-pills-sw-support"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-customer-service-2-line"></i>
+                        <span>Software Service &amp; Support</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Right Side Sub-Menu Content (Empty for now) -->
+                <div class="mega-menu-content tab-content" id="v-pills-sw-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-sw-apps" role="tabpanel" aria-labelledby="v-pills-sw-apps-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-sw-os" role="tabpanel" aria-labelledby="v-pills-sw-os-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-sw-games" role="tabpanel" aria-labelledby="v-pills-sw-games-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-sw-support" role="tabpanel" aria-labelledby="v-pills-sw-support-tab"></div>
+                </div>
+              </div>
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover">
+
+          <!-- Business Essentials Mega Dropdown -->
+          <li class="nav-item dropdown dropdown-hover position-static">
             <a class="nav-link dropdown-toggle px-0 py-0" href="#" id="miscDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Business Essentials
             </a>
-            <div class="cat-dropdown-menu shadow-sm rounded-3 mt-0 border-0" aria-labelledby="miscDropdown">
-              <ul class="cat-scroll-list">
-                <li><a href="#categories"><i class="ri-heart-pulse-line"></i><span>Health &amp; Beauty</span></a></li>
-                <li><a href="#categories"><i class="ri-archive-drawer-line"></i><span>Filing &amp; Archive</span></a>
-                </li>
-                <li><a href="#categories"><i class="ri-pencil-ruler-2-line"></i><span>Desk Accessories</span></a></li>
-                <li><a href="#categories"><i class="ri-file-paper-2-line"></i><span>Paper Products</span></a></li>
-                <li><a href="#categories"><i class="ri-truck-line"></i><span>Mailroom &amp; Shipping</span></a></li>
-                <li><a href="#categories"><i class="ri-presentation-line"></i><span>Meeting &amp;
-                      Presentation</span></a></li>
-                <li><a href="#categories"><i class="ri-building-4-line"></i><span>Facility Supplies</span></a></li>
-                <li><a href="#categories"><i class="ri-eye-line"></i><span>Vision Care</span></a></li>
-                <li><a href="#categories"><i class="ri-armchair-line"></i><span>Office Furnishing &amp;
-                      Accessories</span></a></li>
-                <li><a href="#categories"><i class="ri-service-line"></i><span>Pet Supplies</span></a></li>
-                <li><a href="#categories"><i class="ri-box-3-line"></i><span>Additional Products</span></a></li>
-              </ul>
+            <div class="cat-mega-dropdown dropdown-menu shadow-lg border-0" aria-labelledby="miscDropdown">
+              <div class="mega-menu-wrapper">
+                <!-- Left Sidebar Navigation Tabs -->
+                <div class="mega-menu-sidebar">
+                  <div class="nav flex-column nav-pills" id="v-pills-biz-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-biz-health-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-health" type="button" role="tab" aria-controls="v-pills-biz-health"
+                      aria-selected="true">
+                      <span class="cat-item-info">
+                        <i class="ri-heart-pulse-line"></i>
+                        <span>Health &amp; Beauty</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-filing-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-filing" type="button" role="tab" aria-controls="v-pills-biz-filing"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-archive-drawer-line"></i>
+                        <span>Filing &amp; Archive</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-desk-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-desk" type="button" role="tab" aria-controls="v-pills-biz-desk"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-pencil-ruler-2-line"></i>
+                        <span>Desk Accessories</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-paper-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-paper" type="button" role="tab" aria-controls="v-pills-biz-paper"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-file-paper-2-line"></i>
+                        <span>Paper Products</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-shipping-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-shipping" type="button" role="tab" aria-controls="v-pills-biz-shipping"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-truck-line"></i>
+                        <span>Mailroom &amp; Shipping</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-meeting-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-meeting" type="button" role="tab" aria-controls="v-pills-biz-meeting"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-presentation-line"></i>
+                        <span>Meeting &amp; Presentation</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-facility-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-facility" type="button" role="tab" aria-controls="v-pills-biz-facility"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-building-4-line"></i>
+                        <span>Facility Supplies</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-vision-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-vision" type="button" role="tab" aria-controls="v-pills-biz-vision"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-eye-line"></i>
+                        <span>Vision Care</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-furnishing-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-furnishing" type="button" role="tab" aria-controls="v-pills-biz-furnishing"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-armchair-line"></i>
+                        <span>Office Furnishing &amp; Accessories</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-pet-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-pet" type="button" role="tab" aria-controls="v-pills-biz-pet"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-service-line"></i>
+                        <span>Pet Supplies</span>
+                      </span>
+                    </button>
+
+                    <button class="nav-link" id="v-pills-biz-more-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-biz-more" type="button" role="tab" aria-controls="v-pills-biz-more"
+                      aria-selected="false">
+                      <span class="cat-item-info">
+                        <i class="ri-box-3-line"></i>
+                        <span>Additional Products</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Right Side Sub-Menu Content (Empty for now) -->
+                <div class="mega-menu-content tab-content" id="v-pills-biz-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-biz-health" role="tabpanel" aria-labelledby="v-pills-biz-health-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-filing" role="tabpanel" aria-labelledby="v-pills-biz-filing-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-desk" role="tabpanel" aria-labelledby="v-pills-biz-desk-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-paper" role="tabpanel" aria-labelledby="v-pills-biz-paper-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-shipping" role="tabpanel" aria-labelledby="v-pills-biz-shipping-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-meeting" role="tabpanel" aria-labelledby="v-pills-biz-meeting-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-facility" role="tabpanel" aria-labelledby="v-pills-biz-facility-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-vision" role="tabpanel" aria-labelledby="v-pills-biz-vision-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-furnishing" role="tabpanel" aria-labelledby="v-pills-biz-furnishing-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-pet" role="tabpanel" aria-labelledby="v-pills-biz-pet-tab"></div>
+                  <div class="tab-pane fade" id="v-pills-biz-more" role="tabpanel" aria-labelledby="v-pills-biz-more-tab"></div>
+                </div>
+              </div>
             </div>
           </li>
           <li class="nav-item"><a class="nav-link px-0 py-0" href="#partners">Partners</a></li>

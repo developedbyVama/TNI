@@ -12030,14 +12030,23 @@ header.navbar--hidden {
   background: #1e3264;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.secondary-navbar .nav-link {
+.secondary-navbar .secondary-nav-list > .nav-item > .nav-link {
   font-size: 0.95rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9) !important;
   transition: color 0.2s ease;
 }
-.secondary-navbar .nav-link:hover {
+.secondary-navbar .secondary-nav-list > .nav-item > .nav-link:hover, .secondary-navbar .secondary-nav-list > .nav-item > .nav-link:focus:hover {
   color: #F17D16 !important;
+}
+.secondary-navbar .secondary-nav-list > .nav-item > .nav-link:focus:not(:hover):not(.active), .secondary-navbar .secondary-nav-list > .nav-item > .nav-link:active:not(:hover):not(.active), .secondary-navbar .secondary-nav-list > .nav-item > .nav-link.show:not(:hover):not(.active) {
+  color: rgba(255, 255, 255, 0.9) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.secondary-navbar .secondary-nav-list > .nav-item > .nav-link.active {
+  color: #F17D16 !important;
+  font-weight: 700 !important;
 }
 .secondary-navbar .dropdown-menu {
   border-top: 2px solid #F17D16 !important;
@@ -12053,6 +12062,12 @@ header.navbar--hidden {
 @media (min-width: 992px) {
   .secondary-navbar .dropdown-hover {
     position: relative;
+  }
+  .secondary-navbar .dropdown-hover:hover > .nav-link {
+    color: #F17D16 !important;
+  }
+  .secondary-navbar .dropdown-hover:not(:hover) > .nav-link:not(.active) {
+    color: rgba(255, 255, 255, 0.9) !important;
   }
   .secondary-navbar .dropdown-hover:hover > .dropdown-menu, .secondary-navbar .dropdown-hover:hover > .cat-mega-dropdown, .secondary-navbar .dropdown-hover:hover > .cat-dropdown-menu {
     display: block !important;
@@ -14446,11 +14461,14 @@ section {
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
   }
-  .page-banner h1, .page-banner .h1, .page-banner .display-4, .page-banner .display-5 {
+  .page-banner h1, .page-banner .h1,
+  .page-banner .display-4,
+  .page-banner .display-5 {
     font-size: 1.85rem !important;
     line-height: 1.3 !important;
   }
-  .page-banner .lead, .page-banner .about-hero-lead {
+  .page-banner .lead,
+  .page-banner .about-hero-lead {
     font-size: 0.98rem !important;
     line-height: 1.65 !important;
   }
@@ -14525,7 +14543,8 @@ section {
     text-align: left !important;
     padding: 1.25rem !important;
   }
-  .about-card-hover .icon-square, .about-card-hover .about-icon-square {
+  .about-card-hover .icon-square,
+  .about-card-hover .about-icon-square {
     margin-left: 0 !important;
     margin-right: auto !important;
   }

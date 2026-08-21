@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (siteHeader) {
       const h = siteHeader.getBoundingClientRect().height;
       document.body.style.paddingTop = h + 'px';
+      document.documentElement.style.setProperty('--header-height', h + 'px');
     }
   }
   setHeaderOffset();
@@ -78,14 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── Mega Dropdown Tab Hover Switch ──────────────────────────
-  const megaTabLinks = document.querySelectorAll('.cat-mega-dropdown .nav-link[data-bs-toggle="pill"]');
-  megaTabLinks.forEach(tab => {
-    tab.addEventListener('mouseenter', () => {
-      if (typeof bootstrap !== 'undefined' && bootstrap.Tab) {
-        const tabTrigger = new bootstrap.Tab(tab);
-        tabTrigger.show();
-      }
-    });
+  document.addEventListener('mouseover', (e) => {
+    const tab = e.target.closest('.cat-mega-dropdown .nav-link[data-bs-toggle="pill"]');
+    if (tab && typeof bootstrap !== 'undefined' && bootstrap.Tab) {
+      const tabTrigger = bootstrap.Tab.getOrCreateInstance(tab);
+      tabTrigger.show();
+      const content = tab.closest('.mega-menu-wrapper')?.querySelector('.mega-menu-content');
+      if (content) content.scrollTop = 0;
+    }
   });
 
   // ── Auto-hide Scrollbars on Mouse Exit / Scroll Inactivity ──
@@ -183,6 +184,39 @@ document.addEventListener('DOMContentLoaded', () => {
         992: {
           slidesPerView: 5,
           spaceBetween: 20,
+        },
+      },
+    });
+  }
+
+  // ── Featured Products Swiper ──────────────────────────────────
+  if (typeof Swiper !== 'undefined' && document.querySelector('.featured-swiper')) {
+    new Swiper('.featured-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      navigation: {
+        nextEl: '#featNextBtn',
+        prevEl: '#featPrevBtn',
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 24,
         },
       },
     });

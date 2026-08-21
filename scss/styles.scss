@@ -83,14 +83,14 @@ button,
 
 // ── 5. PROMO BAR ─────────────────────────────────────────────
 .promo-bar {
-  background: #0b1329;
-  color: #cbd5e1;
+  background: #122b5e;
+  color: #e2e8f0;
   font-size: 0.74rem;
   font-weight: 500;
   text-align: center;
   padding: 0.3rem 1rem;
   letter-spacing: 0.02em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,17 +134,17 @@ header {
 }
 
 .main-navbar {
-  background: linear-gradient(180deg, rgba(28, 48, 96, 0.98) 0%, rgba(18, 33, 70, 0.98) 100%);
+  background: linear-gradient(180deg, #123075 0%, #09235d 100%);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.7rem 0;
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: none !important;
   transition: all 0.25s ease;
 
   &.scrolled {
-    padding: 0.4rem 0;
-    background: rgba(15, 28, 60, 0.97);
+    padding: 0.5rem 0;
+    background: rgba(30, 55, 112, 0.98);
     box-shadow: none !important;
 
     .brand-logo-img {
@@ -161,8 +161,8 @@ header {
     margin-left: 1.75rem !important;
   }
 
-  > .nav-item {
-    > .nav-link {
+  >.nav-item {
+    >.nav-link {
       font-size: 0.84rem;
       font-weight: 500;
       letter-spacing: 0.01em;
@@ -222,28 +222,28 @@ header {
     .dropdown-hover {
       position: relative;
 
-      &:hover > .nav-link {
+      &:hover>.nav-link {
         color: #ffffff !important;
         background: rgba(255, 255, 255, 0.08);
         border-color: rgba(255, 255, 255, 0.1);
       }
 
-      &:not(:hover) > .nav-link:not(.active) {
+      &:not(:hover)>.nav-link:not(.active) {
         color: rgba(255, 255, 255, 0.88) !important;
       }
 
-      &:hover > .dropdown-menu,
-      &:hover > .cat-mega-dropdown,
-      &:hover > .cat-dropdown-menu {
+      &:hover>.dropdown-menu,
+      &:hover>.cat-mega-dropdown,
+      &:hover>.cat-dropdown-menu {
         display: block !important;
         margin-top: 0;
         opacity: 1 !important;
         visibility: visible !important;
       }
 
-      &:not(:hover) > .dropdown-menu,
-      &:not(:hover) > .cat-mega-dropdown,
-      &:not(:hover) > .cat-dropdown-menu {
+      &:not(:hover)>.dropdown-menu,
+      &:not(:hover)>.cat-mega-dropdown,
+      &:not(:hover)>.cat-dropdown-menu {
         display: none !important;
         opacity: 0 !important;
         visibility: hidden !important;
